@@ -1,0 +1,1153 @@
+file ; preprocess ; preprocesstime ; abs ; abstime ; solver ; result ; solvetime
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava ; 0:00.00  ; 120sdatabs ; 0:00.75  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava ; 0:00.00  ; 120sdatabsacker ; 0:01.23  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava ; 0:00.00  ; dataabs2c2 ; 0:00.48  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:01.07  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.98  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.61  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.93  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.98  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.94  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.16 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.53  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.84  ; 120sz3 ; timeout solver      ; 2:00.13 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjava ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:00.95  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:01.25  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.14 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.62  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:00.84  ; 120sz3 ; timeout solver      ; 2:00.21 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:01.09  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:01.17  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:00.56  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted1 ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:01.04  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:01.09  ; 120sz3 ; unsat      ; 0:00.05 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.08  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.07  ; 120sz3 ; unsat      ; 0:00.14 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.54  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:00.81  ; 120sz3 ; timeout solver      ; 2:00.71 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabs ; 0:00.86  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabsacker ; 0:01.20  ; 120sz3 ; unsat      ; 0:00.05 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2 ; 0:00.52  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2acker ; 0:00.78  ; 120sz3 ; timeout solver      ; 2:00.54 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:01.15  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:00.94  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.45  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:00.88  ; 120sz3 ; timeout solver      ; 2:00.59 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:01.20  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:01.20  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.02  ; 120sz3 ; unsat      ; 0:00.16 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:00.66  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:00.87  ; 120sz3 ; timeout solver      ; 2:00.54 
+ModifiedSAS16exp/buggy/esop2010_array_copyodd_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava ; 0:00.00  ; 120sdatabs ; 0:00.72  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava ; 0:00.00  ; 120sdatabsacker ; 0:00.73  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava ; 0:00.00  ; dataabs2acker ; 0:00.06  ; 120sz3 ; unsat      ; 0:00.19 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava ; 0:00.00  ; dataabs2c2 ; 0:00.09  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava1 ; 0:00.01  ; 120sdatabs ; 0:00.72  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava1 ; 0:00.01  ; 120sdatabsacker ; 0:00.72  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava1 ; 0:00.01  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava1 ; 0:00.01  ; dataabs2 ; 0:00.02  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava1 ; 0:00.01  ; dataabs2acker ; 0:00.06  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava1 ; 0:00.01  ; dataabs2c2 ; 0:00.15  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava1 ; 0:00.01  ; dataabs2c2acker ; 0:00.25  ; 120sz3 ; unsat      ; 0:00.95 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava1 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.63  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.82  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.06  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.15 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.14  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.18  ; 120sz3 ; unsat      ; 0:00.95 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjava ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:00.65  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:00.71  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.21 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.15  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:00.21  ; 120sz3 ; unsat      ; 0:00.64 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:00.64  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:00.81  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.05 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.21 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:00.14  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2acker ; 0:00.19  ; 120sz3 ; unsat      ; 0:00.66 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:00.79  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:00.70  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.06  ; 120sz3 ; unsat      ; 0:00.15 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.08  ; 120sz3 ; unsat      ; 0:00.17 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.13  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:00.20  ; 120sz3 ; unsat      ; 0:00.29 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabs ; 0:00.57  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabsacker ; 0:00.62  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2 ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.19 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.16 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2 ; 0:00.15  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2acker ; 0:00.15  ; 120sz3 ; unsat      ; 0:00.40 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted ; 0:00.01  ; noabs ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:00.77  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:00.71  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.05 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.06  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.07  ; 120sz3 ; unsat      ; 0:00.21 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.14  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:00.23  ; 120sz3 ; unsat      ; 0:00.35 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted2 ; 0:00.01  ; 120sdatabs ; 0:00.84  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted2 ; 0:00.01  ; 120sdatabsacker ; 0:00.88  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted2 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2 ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2acker ; 0:00.07  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2c2 ; 0:00.12  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2c2acker ; 0:00.21  ; 120sz3 ; unsat      ; 0:00.24 
+ModifiedSAS16exp/buggy/esop2010_array_initeven_buggy ; 10scvjavaoldhinted2 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava ; 0:00.00  ; 120sdatabs ; 0:01.30  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava ; 0:00.00  ; 120sdatabsacker ; 0:01.24  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava ; 0:00.00  ; dataabs2 ; 0:00.06  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava ; 0:00.00  ; dataabs2c2 ; 0:00.64  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava ; 0:00.00  ; dataabs2c2acker ; 0:00.84  ; 120sz3 ; timeout solver      ; 2:00.31 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava1 ; 0:00.01  ; 120sdatabs ; 0:01.01  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava1 ; 0:00.01  ; 120sdatabsacker ; 0:01.16  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava1 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava1 ; 0:00.01  ; dataabs2 ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava1 ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava1 ; 0:00.01  ; dataabs2c2 ; 0:00.71  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava1 ; 0:00.01  ; dataabs2c2acker ; 0:00.91  ; 120sz3 ; timeout solver      ; 2:00.32 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava1 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.93  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:01.04  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.46  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.98  ; 120sz3 ; timeout solver      ; 2:00.29 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:00.98  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:00.78  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.10  ; 120sz3 ; unsat      ; 0:00.16 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.71  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:01.11  ; 120sz3 ; timeout solver      ; 2:00.23 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.05 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:01.29  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:01.31  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.05 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.14 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:00.61  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted1 ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:01.08  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:00.92  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.69  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:01.05  ; 120sz3 ; timeout solver      ; 2:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.07 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabs ; 0:01.06  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabsacker ; 0:01.27  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2 ; 0:00.03  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2 ; 0:00.73  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2acker ; 0:01.03  ; 120sz3 ; timeout solver      ; 2:00.13 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted ; 0:00.01  ; noabs ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:01.20  ; 120sz3 ; unsat      ; 0:00.11 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:01.21  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.14 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.05 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.47  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:01.21  ; 120sz3 ; timeout solver      ; 2:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted2 ; 0:00.04  ; 120sdatabs ; 0:01.11  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted2 ; 0:00.04  ; 120sdatabsacker ; 0:01.19  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted2 ; 0:00.04  ; 30svaphor ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.10 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted2 ; 0:00.04  ; dataabs2 ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted2 ; 0:00.04  ; dataabs2acker ; 0:00.04  ; 120sz3 ; unsat      ; 0:00.08 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted2 ; 0:00.04  ; dataabs2c2 ; 0:00.72  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted2 ; 0:00.04  ; dataabs2c2acker ; 0:01.11  ; 120sz3 ; timeout solver      ; 2:00.12 
+ModifiedSAS16exp/buggy/esop2010_array_reverse_buggy ; 10scvjavaoldhinted2 ; 0:00.04  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.06 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava ; 0:00.00  ; 120sdatabs ; 0:05.17  ; 120sz3 ; unsat      ; 0:00.22 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava ; 0:00.00  ; 120sdatabsacker ; 0:05.05  ; 120sz3 ; unsat      ; 0:00.15 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.23 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava ; 0:00.00  ; dataabs2 ; 0:00.09  ; 120sz3 ; unsat      ; 0:00.24 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava ; 0:00.00  ; dataabs2acker ; 0:00.13  ; 120sz3 ; unsat      ; 0:00.22 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava ; 0:00.00  ; dataabs2c2 ; 0:08.69  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:05.33  ; 120sz3 ; unsat      ; 0:00.21 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:05.39  ; 120sz3 ; unsat      ; 0:00.16 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.22 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.08  ; 120sz3 ; unsat      ; 0:00.21 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.11  ; 120sz3 ; unsat      ; 0:00.16 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:07.85  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:17.09  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.09 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:04.50  ; 120sz3 ; unsat      ; 0:00.22 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:05.73  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.24 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.08  ; 120sz3 ; unsat      ; 0:00.18 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.14  ; 120sz3 ; unsat      ; 0:00.20 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:08.14  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:15.54  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjava ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted ; 0:00.01  ; 120sdatabs ; 0:05.61  ; 120sz3 ; unsat      ; 0:00.21 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted ; 0:00.01  ; 120sdatabsacker ; 0:05.40  ; 120sz3 ; unsat      ; 0:00.13 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted ; 0:00.01  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.18 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted ; 0:00.01  ; dataabs2 ; 0:00.08  ; 120sz3 ; unsat      ; 0:00.22 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted ; 0:00.01  ; dataabs2acker ; 0:00.11  ; 120sz3 ; unsat      ; 0:00.24 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted ; 0:00.01  ; dataabs2c2 ; 0:07.80  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted ; 0:00.01  ; dataabs2c2acker ; 0:15.61  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:05.41  ; 120sz3 ; unsat      ; 0:00.20 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:05.31  ; 120sz3 ; unsat      ; 0:00.17 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.26 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.08  ; 120sz3 ; unsat      ; 0:00.20 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.11  ; 120sz3 ; unsat      ; 0:00.26 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:08.19  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.14 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted1 ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:05.04  ; 120sz3 ; unsat      ; 0:00.21 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:05.28  ; 120sz3 ; unsat      ; 0:00.17 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.19 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.08  ; 120sz3 ; unsat      ; 0:00.22 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.16  ; 120sz3 ; unsat      ; 0:00.29 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:07.73  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:16.66  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.15 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabs ; 0:05.53  ; 120sz3 ; unsat      ; 0:00.20 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabsacker ; 0:04.48  ; 120sz3 ; unsat      ; 0:00.20 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.20 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2 ; 0:00.09  ; 120sz3 ; unsat      ; 0:00.36 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2acker ; 0:00.15  ; 120sz3 ; unsat      ; 0:00.16 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2 ; 0:08.43  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2acker ; 0:15.71  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:04.69  ; 120sz3 ; unsat      ; 0:00.22 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:05.53  ; 120sz3 ; unsat      ; 0:00.16 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.02  ; 120sz3 ; unsat      ; 0:00.20 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.10  ; 120sz3 ; unsat      ; 0:00.22 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.15  ; 120sz3 ; unsat      ; 0:00.24 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:08.40  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:16.64  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.14 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:04.71  ; 120sz3 ; unsat      ; 0:00.17 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:04.64  ; 120sz3 ; unsat      ; 0:00.12 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; unsat      ; 0:00.27 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.14  ; 120sz3 ; unsat      ; 0:00.23 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.11  ; 120sz3 ; unsat      ; 0:00.19 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:08.53  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:16.69  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/buggy/esop2010_mergeinterleave_buggy ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; unsat      ; 0:00.15 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava ; 0:00.01  ; 120sdatabs ; 0:01.01  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava ; 0:00.01  ; 120sdatabsacker ; 0:00.87  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:01.00 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava ; 0:00.01  ; dataabs2 ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava ; 0:00.01  ; dataabs2c2 ; 0:00.45  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava ; 0:00.01  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:00.97  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.87  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:00.91 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.42  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.86  ; 120sz3 ; timeout solver      ; 2:00.40 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.82  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.80  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:01.23 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.36  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.96  ; 120sz3 ; timeout solver      ; 2:00.96 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjava ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:01.39  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:01.21  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:05.57 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.05  ; 120sz3 ; sat      ; 0:00.30 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.32 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.67  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:01.04  ; 120sz3 ; error solver      ; 1:36.48 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabs ; 0:01.87  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabsacker ; 0:01.68  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted1 ; 0:00.01  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.11 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted1 ; 0:00.01  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted1 ; 0:00.01  ; dataabs2acker ; 0:00.07  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted1 ; 0:00.01  ; dataabs2c2 ; 0:00.62  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted1 ; 0:00.01  ; dataabs2c2acker ; 0:00.92  ; 120sz3 ; timeout solver      ; 2:00.50 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted1 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted2 ; 0:00.01  ; 120sdatabs ; 0:01.51  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted2 ; 0:00.01  ; 120sdatabsacker ; 0:01.53  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted2 ; 0:00.01  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.11 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted2 ; 0:00.01  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted2 ; 0:00.01  ; dataabs2acker ; 0:00.06  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted2 ; 0:00.01  ; dataabs2c2 ; 0:00.71  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted2 ; 0:00.01  ; dataabs2c2acker ; 0:01.26  ; 120sz3 ; error solver      ; 1:23.47 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavahinted2 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabs ; 0:01.29  ; 120sz3 ; sat      ; 0:00.40 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabsacker ; 0:01.74  ; 120sz3 ; sat      ; 0:00.31 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:04.77 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2 ; 0:00.04  ; 120sz3 ; sat      ; 0:00.59 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.59 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2 ; 0:00.57  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2acker ; 0:01.07  ; 120sz3 ; error solver      ; 1:28.72 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:01.52  ; 120sz3 ; sat      ; 0:00.38 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:01.46  ; 120sz3 ; sat      ; 0:00.37 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.06  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.46 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.83  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:01.15  ; 120sz3 ; error solver      ; 1:26.62 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted2 ; 0:00.01  ; 120sdatabs ; 0:01.62  ; 120sz3 ; sat      ; 0:00.34 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted2 ; 0:00.01  ; 120sdatabsacker ; 0:01.54  ; 120sz3 ; sat      ; 0:00.29 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted2 ; 0:00.01  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.13 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2 ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.28 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2c2 ; 0:00.64  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2c2acker ; 0:00.87  ; 120sz3 ; error solver      ; 1:33.09 
+ModifiedSAS16exp/Correct/esop2010_arrayappend ; 10scvjavaoldhinted2 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava ; 0:00.01  ; 120sdatabs ; 0:00.41  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava ; 0:00.01  ; 120sdatabsacker ; 0:00.74  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.11 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava ; 0:00.01  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava ; 0:00.01  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava ; 0:00.01  ; dataabs2c2 ; 0:00.41  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava ; 0:00.01  ; dataabs2c2acker ; 0:00.73  ; 120sz3 ; error solver      ; 1:23.57 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava ; 0:00.01  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:00.48  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.69  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.24  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.62  ; 120sz3 ; timeout solver      ; 2:00.66 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.61  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.56  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.42  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.79  ; 120sz3 ; timeout solver      ; 2:00.48 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted ; 0:00.01  ; 120sdatabs ; 0:00.75  ; 120sz3 ; sat      ; 0:00.36 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted ; 0:00.01  ; 120sdatabsacker ; 0:00.88  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted ; 0:00.01  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted ; 0:00.01  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.19 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted ; 0:00.01  ; dataabs2c2 ; 0:00.38  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted ; 0:00.01  ; dataabs2c2acker ; 0:00.98  ; 120sz3 ; timeout solver      ; 2:00.40 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted ; 0:00.01  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:00.71  ; 120sz3 ; sat      ; 0:00.46 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:00.93  ; 120sz3 ; sat      ; 0:00.39 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.06  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:00.41  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2acker ; 0:00.61  ; 120sz3 ; timeout solver      ; 2:00.29 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted2 ; 0:00.01  ; 120sdatabs ; 0:00.96  ; 120sz3 ; sat      ; 0:00.39 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted2 ; 0:00.01  ; 120sdatabsacker ; 0:00.84  ; 120sz3 ; sat      ; 0:00.36 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted2 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted2 ; 0:00.01  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted2 ; 0:00.01  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted2 ; 0:00.01  ; dataabs2c2 ; 0:00.44  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted2 ; 0:00.01  ; dataabs2c2acker ; 0:01.03  ; 120sz3 ; timeout solver      ; 2:00.12 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavahinted2 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabs ; 0:00.64  ; 120sz3 ; sat      ; 0:00.30 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabsacker ; 0:00.71  ; 120sz3 ; sat      ; 0:00.22 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.37 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.35 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2 ; 0:00.54  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2acker ; 0:01.00  ; 120sz3 ; timeout solver      ; 2:00.14 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:00.94  ; 120sz3 ; sat      ; 0:00.30 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:00.77  ; 120sz3 ; sat      ; 0:00.25 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.08 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:10.85 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.54  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:00.71  ; 120sz3 ; timeout solver      ; 2:00.18 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:00.80  ; 120sz3 ; sat      ; 0:00.40 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:00.72  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:18.15 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.07  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:00.37  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:00.91  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_array_copy ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava ; 0:00.00  ; 120sdatabs ; 0:01.07  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava ; 0:00.00  ; 120sdatabsacker ; 0:01.26  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava ; 0:00.00  ; dataabs2 ; 0:00.06  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava ; 0:00.00  ; dataabs2acker ; 0:00.07  ; 120sz3 ; sat      ; 0:01.01 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava ; 0:00.00  ; dataabs2c2 ; 0:00.14  ; 120sz3 ; timeout solver      ; 2:00.21 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava ; 0:00.00  ; dataabs2c2acker ; 0:00.22  ; 120sz3 ; sat      ; 0:03.82 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:01.14  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.94  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.39 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.18  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.23  ; 120sz3 ; sat      ; 0:04.23 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.94  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.91  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.06  ; 120sz3 ; sat      ; 0:00.47 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.18  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.19  ; 120sz3 ; sat      ; 0:02.96 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:01.46  ; 120sz3 ; sat      ; 0:00.74 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:01.48  ; 120sz3 ; sat      ; 0:00.77 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:01.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.06  ; 120sz3 ; sat      ; 0:00.83 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.55 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.15  ; 120sz3 ; timeout solver      ; 2:00.28 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:00.30  ; 120sz3 ; sat      ; 0:01.84 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:01.22  ; 120sz3 ; sat      ; 0:00.73 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:01.51  ; 120sz3 ; sat      ; 0:00.56 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.05  ; 120sz3 ; sat      ; 0:00.81 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.07  ; 120sz3 ; sat      ; 0:00.76 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:00.18  ; 120sz3 ; timeout solver      ; 2:00.22 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2acker ; 0:00.30  ; 120sz3 ; sat      ; 0:02.43 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:01.31  ; 120sz3 ; sat      ; 0:00.66 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:01.40  ; 120sz3 ; sat      ; 0:00.54 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.10 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; sat      ; 0:01.48 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.75 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.16  ; 120sz3 ; timeout solver      ; 2:00.19 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:00.20  ; 120sz3 ; sat      ; 0:01.07 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabs ; 0:01.16  ; 120sz3 ; sat      ; 0:00.89 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabsacker ; 0:01.40  ; 120sz3 ; sat      ; 0:01.14 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:01.67 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2 ; 0:00.04  ; 120sz3 ; sat      ; 0:01.17 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2acker ; 0:00.07  ; 120sz3 ; sat      ; 0:00.78 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2 ; 0:00.18  ; 120sz3 ; timeout solver      ; 2:00.18 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2acker ; 0:00.13  ; 120sz3 ; sat      ; 0:02.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:01.16  ; 120sz3 ; sat      ; 0:01.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:01.44  ; 120sz3 ; sat      ; 0:00.61 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:01.25 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.05  ; 120sz3 ; sat      ; 0:01.85 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.07  ; 120sz3 ; sat      ; 0:00.51 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.19  ; 120sz3 ; timeout solver      ; 2:00.13 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:00.28  ; 120sz3 ; sat      ; 0:01.14 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:01.29  ; 120sz3 ; sat      ; 0:00.81 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:01.53  ; 120sz3 ; sat      ; 0:00.74 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:01.41 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.04  ; 120sz3 ; sat      ; 0:01.69 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.07  ; 120sz3 ; sat      ; 0:00.57 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:00.12  ; 120sz3 ; timeout solver      ; 2:00.13 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:00.28  ; 120sz3 ; sat      ; 0:01.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfind ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava ; 0:00.01  ; 120sdatabs ; 0:00.57  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava ; 0:00.01  ; 120sdatabsacker ; 0:00.70  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava ; 0:00.01  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava ; 0:00.01  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.40 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava ; 0:00.01  ; dataabs2c2 ; 0:00.09  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava ; 0:00.01  ; dataabs2c2acker ; 0:00.13  ; 120sz3 ; sat      ; 0:04.39 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava ; 0:00.01  ; noabs ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:00.59  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.64  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.53 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.14  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.20  ; 120sz3 ; sat      ; 0:01.93 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.80  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.76  ; 120sz3 ; timeout solver      ; 2:00.10 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.75 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.12  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.12  ; 120sz3 ; sat      ; 0:01.93 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:00.73  ; 120sz3 ; sat      ; 0:00.59 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:01.00  ; 120sz3 ; sat      ; 0:00.48 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:01.38 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.80 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.56 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.15  ; 120sz3 ; timeout solver      ; 2:00.25 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:00.23  ; 120sz3 ; sat      ; 0:01.56 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:00.84  ; 120sz3 ; sat      ; 0:00.69 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:00.93  ; 120sz3 ; sat      ; 0:00.73 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:01.30 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.43 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.48 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:00.10  ; 120sz3 ; timeout solver      ; 2:00.37 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2acker ; 0:00.19  ; 120sz3 ; sat      ; 0:01.38 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:00.90  ; 120sz3 ; sat      ; 0:00.64 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:00.95  ; 120sz3 ; sat      ; 0:00.75 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:01.23 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; sat      ; 0:00.38 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.65 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.13  ; 120sz3 ; timeout solver      ; 2:00.48 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:00.14  ; 120sz3 ; sat      ; 0:00.64 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabs ; 0:00.79  ; 120sz3 ; sat      ; 0:00.73 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabsacker ; 0:00.98  ; 120sz3 ; sat      ; 0:00.58 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:01.12 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:01.17 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.30 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2 ; 0:00.10  ; 120sz3 ; timeout solver      ; 2:00.33 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2acker ; 0:00.22  ; 120sz3 ; sat      ; 0:00.62 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted ; 0:00.02  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:00.88  ; 120sz3 ; sat      ; 0:00.95 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:00.64  ; 120sz3 ; sat      ; 0:00.53 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:01.13 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.71 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.60 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.14  ; 120sz3 ; timeout solver      ; 2:00.25 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:00.17  ; 120sz3 ; sat      ; 0:00.47 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:00.90  ; 120sz3 ; sat      ; 0:00.97 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:00.87  ; 120sz3 ; sat      ; 0:00.66 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:01.11 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.04  ; 120sz3 ; sat      ; 0:00.80 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.43 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:00.12  ; 120sz3 ; timeout solver      ; 2:00.41 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:00.19  ; 120sz3 ; sat      ; 0:00.48 
+ModifiedSAS16exp/Correct/esop2010_arrayfindnonnull ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava ; 0:00.01  ; 120sdatabs ; 0:00.46  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava ; 0:00.01  ; 120sdatabsacker ; 0:00.43  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava ; 0:00.01  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava ; 0:00.01  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava ; 0:00.01  ; dataabs2c2 ; 0:00.09  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava ; 0:00.01  ; dataabs2c2acker ; 0:00.09  ; 120sz3 ; timeout solver      ; 2:00.88 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:00.36  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.36  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.17  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.35  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.43  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.10  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.15  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:00.68  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:00.50  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:00.21 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; sat      ; 0:00.23 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.08  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:00.16  ; 120sz3 ; sat      ; 0:01.42 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabs ; 0:00.54  ; 120sz3 ; sat      ; 0:00.18 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabsacker ; 0:00.53  ; 120sz3 ; sat      ; 0:00.28 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted1 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted1 ; 0:00.01  ; dataabs2 ; 0:00.02  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted1 ; 0:00.01  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.35 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted1 ; 0:00.01  ; dataabs2c2 ; 0:00.11  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted1 ; 0:00.01  ; dataabs2c2acker ; 0:00.14  ; 120sz3 ; sat      ; 0:01.63 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted1 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:00.62  ; 120sz3 ; sat      ; 0:00.26 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:00.67  ; 120sz3 ; sat      ; 0:00.29 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:00.23 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; sat      ; 0:00.26 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.38 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.08  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:00.16  ; 120sz3 ; sat      ; 0:00.57 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabs ; 0:00.59  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabsacker ; 0:00.56  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:00.28 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2acker ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2 ; 0:00.11  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2acker ; 0:00.18  ; 120sz3 ; sat      ; 0:00.60 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:00.57  ; 120sz3 ; sat      ; 0:00.20 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:00.72  ; 120sz3 ; sat      ; 0:00.16 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:00.21 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.08  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:00.19  ; 120sz3 ; sat      ; 0:00.55 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted2 ; 0:00.01  ; 120sdatabs ; 0:00.54  ; 120sz3 ; sat      ; 0:00.23 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted2 ; 0:00.01  ; 120sdatabsacker ; 0:00.71  ; 120sz3 ; sat      ; 0:00.17 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted2 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:00.22 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2acker ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2c2 ; 0:00.10  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2c2acker ; 0:00.19  ; 120sz3 ; sat      ; 0:00.55 
+ModifiedSAS16exp/Correct/esop2010_array_init2i ; 10scvjavaoldhinted2 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava ; 0:00.01  ; 120sdatabs ; 0:00.45  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava ; 0:00.01  ; 120sdatabsacker ; 0:00.34  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava ; 0:00.01  ; 30svaphor ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava ; 0:00.01  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava ; 0:00.01  ; dataabs2c2 ; 0:00.07  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava ; 0:00.01  ; dataabs2c2acker ; 0:00.09  ; 120sz3 ; timeout solver      ; 2:00.08 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava ; 0:00.01  ; noabs ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:00.28  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.40  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.10  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.14  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava2 ; 0:00.01  ; 120sdatabs ; 0:00.35  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava2 ; 0:00.01  ; 120sdatabsacker ; 0:00.35  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava2 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava2 ; 0:00.01  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava2 ; 0:00.01  ; dataabs2acker ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava2 ; 0:00.01  ; dataabs2c2 ; 0:00.10  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava2 ; 0:00.01  ; dataabs2c2acker ; 0:00.08  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjava2 ; 0:00.01  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:00.48  ; 120sz3 ; sat      ; 0:00.12 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:00.64  ; 120sz3 ; sat      ; 0:00.20 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:00.23 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; sat      ; 0:00.22 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.46 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.11  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:00.13  ; 120sz3 ; sat      ; 0:01.30 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:00.35  ; 120sz3 ; sat      ; 0:00.23 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:00.53  ; 120sz3 ; sat      ; 0:00.12 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.14 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.06  ; 120sz3 ; sat      ; 0:00.35 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:00.11  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2acker ; 0:00.15  ; 120sz3 ; sat      ; 0:00.95 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted2 ; 0:00.01  ; 120sdatabs ; 0:00.58  ; 120sz3 ; sat      ; 0:00.18 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted2 ; 0:00.01  ; 120sdatabsacker ; 0:00.51  ; 120sz3 ; sat      ; 0:00.20 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted2 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted2 ; 0:00.01  ; dataabs2 ; 0:00.02  ; 120sz3 ; sat      ; 0:00.25 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted2 ; 0:00.01  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.33 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted2 ; 0:00.01  ; dataabs2c2 ; 0:00.11  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted2 ; 0:00.01  ; dataabs2c2acker ; 0:00.17  ; 120sz3 ; sat      ; 0:00.43 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavahinted2 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted ; 0:00.03  ; 120sdatabs ; 0:00.70  ; 120sz3 ; sat      ; 0:00.23 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted ; 0:00.03  ; 120sdatabsacker ; 0:00.59  ; 120sz3 ; sat      ; 0:00.18 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted ; 0:00.03  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:00.32 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted ; 0:00.03  ; dataabs2 ; 0:00.02  ; 120sz3 ; sat      ; 0:00.35 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted ; 0:00.03  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.39 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted ; 0:00.03  ; dataabs2c2 ; 0:00.09  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted ; 0:00.03  ; dataabs2c2acker ; 0:00.16  ; 120sz3 ; sat      ; 0:00.50 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted ; 0:00.03  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:00.44  ; 120sz3 ; sat      ; 0:00.15 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:00.53  ; 120sz3 ; sat      ; 0:00.22 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; sat      ; 0:00.23 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.32 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.35 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.11  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:00.15  ; 120sz3 ; sat      ; 0:00.31 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:00.67  ; 120sz3 ; sat      ; 0:00.21 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:00.43  ; 120sz3 ; sat      ; 0:00.13 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; sat      ; 0:00.29 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.30 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.41 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:00.10  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:00.15  ; 120sz3 ; sat      ; 0:00.31 
+ModifiedSAS16exp/Correct/esop2010_array_initcte ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava ; 0:00.00  ; 120sdatabs ; 0:01.01  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava ; 0:00.00  ; 120sdatabsacker ; 0:01.20  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava ; 0:00.00  ; dataabs2 ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava ; 0:00.00  ; dataabs2c2 ; 0:00.62  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:01.09  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:01.19  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.57  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.89  ; 120sz3 ; timeout solver      ; 2:00.41 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:01.26  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:01.32  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.53  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:01.20  ; 120sz3 ; timeout solver      ; 2:00.18 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjava ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:01.98  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:02.19  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.14 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.05  ; 120sz3 ; sat      ; 0:00.34 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.09  ; 120sz3 ; sat      ; 0:00.50 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.76  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:01.40  ; 120sz3 ; timeout solver      ; 2:00.25 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabs ; 0:01.73  ; 120sz3 ; sat      ; 0:00.29 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabsacker ; 0:01.81  ; 120sz3 ; sat      ; 0:00.36 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted1 ; 0:00.01  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted1 ; 0:00.01  ; dataabs2 ; 0:00.04  ; 120sz3 ; sat      ; 0:00.48 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted1 ; 0:00.01  ; dataabs2acker ; 0:00.06  ; 120sz3 ; sat      ; 0:00.54 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted1 ; 0:00.01  ; dataabs2c2 ; 0:00.86  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted1 ; 0:00.01  ; dataabs2c2acker ; 0:01.28  ; 120sz3 ; error solver      ; 1:54.92 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted1 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:01.75  ; 120sz3 ; sat      ; 0:00.33 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:02.23  ; 120sz3 ; sat      ; 0:00.40 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.05  ; 120sz3 ; sat      ; 0:00.71 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.40 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.77  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:01.31  ; 120sz3 ; timeout solver      ; 2:00.16 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabs ; 0:01.99  ; 120sz3 ; sat      ; 0:00.36 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabsacker ; 0:01.63  ; 120sz3 ; sat      ; 0:00.45 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2 ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2acker ; 0:00.06  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2 ; 0:00.61  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2acker ; 0:01.44  ; 120sz3 ; timeout solver      ; 2:00.20 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:01.68  ; 120sz3 ; sat      ; 0:00.44 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:01.65  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.13 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.05  ; 120sz3 ; sat      ; 0:00.47 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.08  ; 120sz3 ; sat      ; 0:00.60 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.60  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:01.26  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:01.45  ; 120sz3 ; sat      ; 0:00.31 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:02.38  ; 120sz3 ; sat      ; 0:00.42 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.14 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.05  ; 120sz3 ; sat      ; 0:00.81 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.06  ; 120sz3 ; sat      ; 0:00.43 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:00.73  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:01.56  ; 120sz3 ; timeout solver      ; 2:00.18 
+ModifiedSAS16exp/Correct/esop2010_array_reverse ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava ; 0:00.00  ; 120sdatabs ; 0:00.48  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava ; 0:00.00  ; 120sdatabsacker ; 0:00.66  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.20 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava ; 0:00.00  ; dataabs2c2 ; 0:00.42  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:00.64  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.53  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.31 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.46  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.95  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.56  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.52  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.57  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.71  ; 120sz3 ; timeout solver      ; 2:00.12 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjava ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:01.41  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:01.14  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.45 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.62  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:01.05  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabs ; 0:01.27  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabsacker ; 0:01.40  ; 120sz3 ; sat      ; 0:00.60 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted1 ; 0:00.01  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.12 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted1 ; 0:00.01  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted1 ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.47 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted1 ; 0:00.01  ; dataabs2c2 ; 0:00.57  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted1 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted1 ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:01.23  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:01.32  ; 120sz3 ; sat      ; 0:00.74 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.10 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.40 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.54  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:01.27  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted ; 0:00.03  ; 120sdatabs ; 0:01.26  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted ; 0:00.03  ; 120sdatabsacker ; 0:01.43  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted ; 0:00.03  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.11 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted ; 0:00.03  ; dataabs2 ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted ; 0:00.03  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.45 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted ; 0:00.03  ; dataabs2c2 ; 0:00.69  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted ; 0:00.03  ; dataabs2c2acker ; 0:01.32  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted ; 0:00.03  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted1 ; 0:00.01  ; 120sdatabs ; 0:01.37  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted1 ; 0:00.01  ; 120sdatabsacker ; 0:01.81  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted1 ; 0:00.01  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.14 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted1 ; 0:00.01  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted1 ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.27 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted1 ; 0:00.01  ; dataabs2c2 ; 0:00.75  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted1 ; 0:00.01  ; dataabs2c2acker ; 0:01.33  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted1 ; 0:00.01  ; noabs ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:01.49  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:01.41  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.13 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.06  ; 120sz3 ; sat      ; 0:00.29 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:00.62  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:01.50  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strcpy ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava ; 0:00.01  ; 120sdatabs ; 0:00.12  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava ; 0:00.01  ; 120sdatabsacker ; 0:00.19  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava ; 0:00.01  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava ; 0:00.01  ; dataabs2acker ; 0:00.02  ; 120sz3 ; sat      ; 0:00.13 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava ; 0:00.01  ; dataabs2c2 ; 0:00.07  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava ; 0:00.01  ; dataabs2c2acker ; 0:00.06  ; 120sz3 ; sat      ; 0:00.73 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:00.11  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.21  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.02  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.21  ; 120sz3 ; sat      ; 0:00.37 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava2 ; 0:00.01  ; 120sdatabs ; 0:00.12  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava2 ; 0:00.01  ; 120sdatabsacker ; 0:00.27  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava2 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava2 ; 0:00.01  ; dataabs2 ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava2 ; 0:00.01  ; dataabs2acker ; 0:00.02  ; 120sz3 ; sat      ; 0:00.16 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava2 ; 0:00.01  ; dataabs2c2 ; 0:00.08  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava2 ; 0:00.01  ; dataabs2c2acker ; 0:00.14  ; 120sz3 ; sat      ; 0:00.47 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjava2 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted ; 0:00.01  ; 120sdatabs ; 0:00.39  ; 120sz3 ; sat      ; 0:07.10 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted ; 0:00.01  ; 120sdatabsacker ; 0:00.36  ; 120sz3 ; sat      ; 0:22.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted ; 0:00.01  ; dataabs2 ; 0:00.02  ; 120sz3 ; sat      ; 0:00.21 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted ; 0:00.01  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.22 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted ; 0:00.01  ; dataabs2c2 ; 0:00.08  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted ; 0:00.01  ; dataabs2c2acker ; 0:00.15  ; 120sz3 ; sat      ; 0:00.61 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabs ; 0:00.34  ; 120sz3 ; sat      ; 0:00.21 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted1 ; 0:00.01  ; 120sdatabsacker ; 0:00.38  ; 120sz3 ; sat      ; 0:00.21 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted1 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted1 ; 0:00.01  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted1 ; 0:00.01  ; dataabs2acker ; 0:00.02  ; 120sz3 ; sat      ; 0:00.13 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted1 ; 0:00.01  ; dataabs2c2 ; 0:00.07  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted1 ; 0:00.01  ; dataabs2c2acker ; 0:00.11  ; 120sz3 ; sat      ; 0:00.39 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted1 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:00.41  ; 120sz3 ; sat      ; 0:00.28 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:00.43  ; 120sz3 ; sat      ; 0:00.19 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.22 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.10  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:00.13  ; 120sz3 ; sat      ; 0:00.17 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabs ; 0:00.43  ; 120sz3 ; sat      ; 0:00.21 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabsacker ; 0:00.32  ; 120sz3 ; sat      ; 0:00.17 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2 ; 0:00.02  ; 120sz3 ; sat      ; 0:00.41 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2acker ; 0:00.02  ; 120sz3 ; sat      ; 0:00.13 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2 ; 0:00.08  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2acker ; 0:00.14  ; 120sz3 ; sat      ; 0:00.13 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted1 ; 0:00.03  ; 120sdatabs ; 0:00.18  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted1 ; 0:00.03  ; 120sdatabsacker ; 0:00.48  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted1 ; 0:00.03  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted1 ; 0:00.03  ; dataabs2 ; 0:00.02  ; 120sz3 ; sat      ; 0:00.22 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted1 ; 0:00.03  ; dataabs2acker ; 0:00.02  ; 120sz3 ; sat      ; 0:00.22 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted1 ; 0:00.03  ; dataabs2c2 ; 0:00.07  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted1 ; 0:00.03  ; dataabs2c2acker ; 0:00.09  ; 120sz3 ; sat      ; 0:00.14 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted1 ; 0:00.03  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:00.30  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:00.36  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.02  ; 120sz3 ; sat      ; 0:00.30 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.19 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:00.09  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:00.15  ; 120sz3 ; sat      ; 0:00.15 
+ModifiedSAS16exp/Correct/esop2010_array_strlen ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava ; 0:00.00  ; 120sdatabs ; 0:06.49  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava ; 0:00.00  ; 120sdatabsacker ; 0:06.48  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava ; 0:00.00  ; dataabs2 ; 0:00.12  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava ; 0:00.00  ; dataabs2acker ; 0:00.15  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava ; 0:00.00  ; dataabs2c2 ; 0:32.02  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava ; 0:00.00  ; dataabs2c2acker ; 0:32.03  ; 120sz3 ;   timeoutabs    ; 0:00.10 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:06.65  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:06.83  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.12 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.10  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.13  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:32.03  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:32.01  ; 120sz3 ;   timeoutabs    ; 0:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:07.10  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:06.35  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.16 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.12  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.13  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:32.02  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:32.00  ; 120sz3 ;   timeoutabs    ; 0:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:09.57  ; 120sz3 ; sat      ; 0:00.97 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:09.75  ; 120sz3 ; sat      ; 0:00.70 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.11 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.11  ; 120sz3 ; sat      ; 0:00.44 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.19  ; 120sz3 ; sat      ; 0:00.71 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:32.01  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:32.01  ; 120sz3 ;   timeoutabs    ; 0:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:09.24  ; 120sz3 ; sat      ; 0:00.91 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:09.66  ; 120sz3 ; sat      ; 0:00.74 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.14 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.10  ; 120sz3 ; sat      ; 0:00.89 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.16  ; 120sz3 ; sat      ; 0:01.10 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:32.03  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2acker ; 0:32.01  ; 120sz3 ;   timeoutabs    ; 0:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:09.98  ; 120sz3 ; sat      ; 0:00.80 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:10.10  ; 120sz3 ; sat      ; 0:00.81 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.10  ; 120sz3 ; sat      ; 0:00.93 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.16  ; 120sz3 ; sat      ; 0:00.86 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:32.02  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:32.01  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabs ; 0:09.67  ; 120sz3 ; sat      ; 0:01.01 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabsacker ; 0:10.31  ; 120sz3 ; sat      ; 0:01.10 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.09 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2 ; 0:00.14  ; 120sz3 ; sat      ; 0:00.91 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2acker ; 0:00.18  ; 120sz3 ; sat      ; 0:00.68 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2 ; 0:32.01  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2acker ; 0:32.02  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:09.44  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:09.40  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.16 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.12  ; 120sz3 ; sat      ; 0:01.38 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.15  ; 120sz3 ; sat      ; 0:00.77 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:32.03  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:32.02  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabs ; 0:09.29  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted2 ; 0:00.02  ; 120sdatabsacker ; 0:08.65  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted2 ; 0:00.02  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.21 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2 ; 0:00.11  ; 120sz3 ; sat      ; 0:01.71 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2acker ; 0:00.16  ; 120sz3 ; sat      ; 0:00.77 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2 ; 0:32.02  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted2 ; 0:00.02  ; dataabs2c2acker ; 0:32.01  ; 120sz3 ;   timeoutabs    ; 0:00.00 
+ModifiedSAS16exp/Correct/esop2010_array_swapncopy ; 10scvjavaoldhinted2 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava ; 0:00.00  ; 120sdatabs ; 0:00.75  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava ; 0:00.00  ; 120sdatabsacker ; 0:00.74  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava ; 0:00.00  ; dataabs2c2 ; 0:00.31  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava ; 0:00.00  ; dataabs2c2acker ; 0:00.72  ; 120sz3 ; error solver      ; 0:06.89 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava ; 0:00.00  ; noabs ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:00.79  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.56  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.38  ; 120sz3 ; timeout solver      ; 2:00.06 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.56  ; 120sz3 ; timeout solver      ; 2:00.29 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.02 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.48  ; 120sz3 ; timeout solver      ; 2:00.01 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.60  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.02  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.46  ; 120sz3 ; timeout solver      ; 2:00.08 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.68  ; 120sz3 ; timeout solver      ; 2:00.43 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted ; 0:00.00  ; 120sdatabs ; 0:00.79  ; 120sz3 ; sat      ; 0:00.40 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted ; 0:00.00  ; 120sdatabsacker ; 0:01.03  ; 120sz3 ; sat      ; 0:00.21 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted ; 0:00.00  ; dataabs2acker ; 0:00.06  ; 120sz3 ; sat      ; 0:00.28 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2 ; 0:00.53  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted ; 0:00.00  ; dataabs2c2acker ; 0:00.77  ; 120sz3 ; error solver      ; 0:55.76 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:00.65  ; 120sz3 ; sat      ; 0:00.31 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:00.71  ; 120sz3 ; sat      ; 0:00.27 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.39 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; sat      ; 0:00.51 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:00.47  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted1 ;  ; dataabs2c2acker ;  ; 120sz3 ;  ; 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:00.93  ; 120sz3 ; sat      ; 0:00.23 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:00.86  ; 120sz3 ; sat      ; 0:00.24 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.52 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.44 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.38  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:00.89  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabs ; 0:00.85  ; 120sz3 ; sat      ; 0:00.31 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted ; 0:00.01  ; 120sdatabsacker ; 0:00.67  ; 120sz3 ; sat      ; 0:00.28 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted ; 0:00.01  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.05 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.59 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2acker ; 0:00.05  ; 120sz3 ; sat      ; 0:00.58 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2 ; 0:00.31  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted ; 0:00.01  ; dataabs2c2acker ; 0:00.92  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:00.78  ; 120sz3 ; sat      ; 0:00.26 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:00.74  ; 120sz3 ; sat      ; 0:00.25 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.07 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.04  ; 120sz3 ; sat      ; 0:00.54 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.29 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.58  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:00.89  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.04 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted2 ; 0:00.01  ; 120sdatabs ; 0:00.66  ; 120sz3 ; sat      ; 0:00.34 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted2 ; 0:00.01  ; 120sdatabsacker ; 0:00.71  ; 120sz3 ; sat      ; 0:00.28 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted2 ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.08 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2 ; 0:00.03  ; 120sz3 ; sat      ; 0:00.73 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2acker ; 0:00.04  ; 120sz3 ; sat      ; 0:00.30 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2c2 ; 0:00.43  ; 120sz3 ; timeout solver      ; 2:00.00 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted2 ; 0:00.01  ; dataabs2c2acker ; 0:00.89  ; 120sz3 ; timeout solver      ; 2:00.15 
+ModifiedSAS16exp/Correct/esop2010_memcpy ; 10scvjavaoldhinted2 ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.03 
+NSAD2020_running_example ; 10scvjava ; 0:00.01  ; 120sdatabs ; 0:00.88  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjava ; 0:00.01  ; 120sdatabsacker ; 0:00.87  ; 120sz3 ; timeout solver      ; 2:00.01 
+NSAD2020_running_example ; 10scvjava ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.05 
+NSAD2020_running_example ; 10scvjava ; 0:00.01  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjava ; 0:00.01  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.04 
+NSAD2020_running_example ; 10scvjava ; 0:00.01  ; dataabs2c2 ; 0:00.14  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjava ; 0:00.01  ; dataabs2c2acker ; 0:00.16  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjava ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; unknown      ; 0:03.96 
+NSAD2020_running_example ; 10scvjava1 ; 0:00.00  ; 120sdatabs ; 0:00.69  ; 120sz3 ; unknown      ; 0:32.30 
+NSAD2020_running_example ; 10scvjava1 ; 0:00.00  ; 120sdatabsacker ; 0:00.66  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjava1 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjava1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjava1 ; 0:00.00  ; dataabs2acker ; 0:00.06  ; 120sz3 ; timeout solver      ; 2:00.04 
+NSAD2020_running_example ; 10scvjava1 ; 0:00.00  ; dataabs2c2 ; 0:00.14  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjava1 ; 0:00.00  ; dataabs2c2acker ; 0:00.13  ; 120sz3 ; timeout solver      ; 2:00.03 
+NSAD2020_running_example ; 10scvjava1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unknown      ; 0:03.17 
+NSAD2020_running_example ; 10scvjava2 ; 0:00.00  ; 120sdatabs ; 0:00.79  ; 120sz3 ; unknown      ; 0:33.45 
+NSAD2020_running_example ; 10scvjava2 ; 0:00.00  ; 120sdatabsacker ; 0:00.71  ; 120sz3 ; timeout solver      ; 2:00.01 
+NSAD2020_running_example ; 10scvjava2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; timeout solver      ; 2:00.01 
+NSAD2020_running_example ; 10scvjava2 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.04 
+NSAD2020_running_example ; 10scvjava2 ; 0:00.00  ; dataabs2acker ; 0:00.03  ; 120sz3 ; timeout solver      ; 2:00.03 
+NSAD2020_running_example ; 10scvjava2 ; 0:00.00  ; dataabs2c2 ; 0:00.13  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjava2 ; 0:00.00  ; dataabs2c2acker ; 0:00.18  ; 120sz3 ; timeout solver      ; 2:00.05 
+NSAD2020_running_example ; 10scvjava2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unknown      ; 0:03.78 
+NSAD2020_running_example ; 10scvjavahinted ; 0:00.01  ; 120sdatabs ; 0:01.28  ; 120sz3 ; unknown      ; 0:01.43 
+NSAD2020_running_example ; 10scvjavahinted ; 0:00.01  ; 120sdatabsacker ; 0:01.18  ; 120sz3 ; sat      ; 0:00.90 
+NSAD2020_running_example ; 10scvjavahinted ; 0:00.01  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+NSAD2020_running_example ; 10scvjavahinted ; 0:00.01  ; dataabs2 ; 0:00.05  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjavahinted ; 0:00.01  ; dataabs2acker ; 0:00.07  ; 120sz3 ; sat      ; 0:02.85 
+NSAD2020_running_example ; 10scvjavahinted ; 0:00.01  ; dataabs2c2 ; 0:00.20  ; 120sz3 ; timeout solver      ; 2:00.06 
+NSAD2020_running_example ; 10scvjavahinted ; 0:00.01  ; dataabs2c2acker ; 0:00.22  ; 120sz3 ; timeout solver      ; 2:00.04 
+NSAD2020_running_example ; 10scvjavahinted ; 0:00.01  ; noabs ; 0:00.00  ; 120sz3 ; unknown      ; 0:00.49 
+NSAD2020_running_example ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabs ; 0:01.19  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjavahinted1 ; 0:00.00  ; 120sdatabsacker ; 0:01.15  ; 120sz3 ; timeout solver      ; 2:00.03 
+NSAD2020_running_example ; 10scvjavahinted1 ; 0:00.00  ; 30svaphor ; 0:00.00  ; 120sz3 ; unknown      ; 0:01.11 
+NSAD2020_running_example ; 10scvjavahinted1 ; 0:00.00  ; dataabs2 ; 0:00.03  ; 120sz3 ; unknown      ; 0:15.40 
+NSAD2020_running_example ; 10scvjavahinted1 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.04 
+NSAD2020_running_example ; 10scvjavahinted1 ; 0:00.00  ; dataabs2c2 ; 0:00.19  ; 120sz3 ; timeout solver      ; 2:00.07 
+NSAD2020_running_example ; 10scvjavahinted1 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unknown      ; 0:00.61 
+NSAD2020_running_example ; 10scvjavahinted1 ;  ; dataabs2c2acker ;  ; 120sz3 ; sat  ; 
+NSAD2020_running_example ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabs ; 0:01.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+NSAD2020_running_example ; 10scvjavahinted2 ; 0:00.00  ; 120sdatabsacker ; 0:01.36  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjavahinted2 ; 0:00.00  ; 30svaphor ; 0:00.01  ; 120sz3 ; unknown      ; 0:00.86 
+NSAD2020_running_example ; 10scvjavahinted2 ; 0:00.00  ; dataabs2 ; 0:00.06  ; 120sz3 ; unknown      ; 0:23.69 
+NSAD2020_running_example ; 10scvjavahinted2 ; 0:00.00  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.03 
+NSAD2020_running_example ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2 ; 0:00.16  ; 120sz3 ; timeout solver      ; 2:00.06 
+NSAD2020_running_example ; 10scvjavahinted2 ; 0:00.00  ; dataabs2c2acker ; 0:00.24  ; 120sz3 ; sat      ; 0:29.76 
+NSAD2020_running_example ; 10scvjavahinted2 ; 0:00.00  ; noabs ; 0:00.00  ; 120sz3 ; unknown      ; 0:00.45 
+NSAD2020_running_example ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabs ; 0:01.25  ; 120sz3 ; sat      ; 0:13.58 
+NSAD2020_running_example ; 10scvjavaoldhinted ; 0:00.02  ; 120sdatabsacker ; 0:01.41  ; 120sz3 ; sat      ; 0:00.44 
+NSAD2020_running_example ; 10scvjavaoldhinted ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; timeout solver      ; 2:00.01 
+NSAD2020_running_example ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2 ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.02 
+NSAD2020_running_example ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2acker ; 0:00.04  ; 120sz3 ; timeout solver      ; 2:00.03 
+NSAD2020_running_example ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2 ; 0:00.15  ; 120sz3 ; timeout solver      ; 2:00.06 
+NSAD2020_running_example ; 10scvjavaoldhinted ; 0:00.02  ; dataabs2c2acker ; 0:00.24  ; 120sz3 ; timeout solver      ; 2:00.01 
+NSAD2020_running_example ; 10scvjavaoldhinted ; 0:00.02  ; noabs ; 0:00.00  ; 120sz3 ; unknown      ; 0:00.66 
+NSAD2020_running_example ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabs ; 0:01.24  ; 120sz3 ; sat      ; 0:14.29 
+NSAD2020_running_example ; 10scvjavaoldhinted1 ; 0:00.02  ; 120sdatabsacker ; 0:01.22  ; 120sz3 ; sat      ; 0:00.96 
+NSAD2020_running_example ; 10scvjavaoldhinted1 ; 0:00.02  ; 30svaphor ; 0:00.00  ; 120sz3 ; unknown      ; 0:01.17 
+NSAD2020_running_example ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2 ; 0:00.05  ; 120sz3 ; unknown      ; 0:02.47 
+NSAD2020_running_example ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2acker ; 0:00.06  ; 120sz3 ; sat      ; 0:03.94 
+NSAD2020_running_example ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2 ; 0:00.09  ; 120sz3 ; timeout solver      ; 2:00.03 
+NSAD2020_running_example ; 10scvjavaoldhinted1 ; 0:00.02  ; dataabs2c2acker ; 0:00.22  ; 120sz3 ; sat      ; 1:38.43 
+NSAD2020_running_example ; 10scvjavaoldhinted1 ; 0:00.02  ; noabs ; 0:00.01  ; 120sz3 ; unknown      ; 0:00.61 
+NSAD2020_running_example ; 10scvjavaoldhinted2 ; 0:00.03  ; 120sdatabs ; 0:01.08  ; 120sz3 ; sat      ; 0:14.63 
+NSAD2020_running_example ; 10scvjavaoldhinted2 ; 0:00.03  ; 120sdatabsacker ; 0:01.16  ; 120sz3 ; sat      ; 0:01.03 
+NSAD2020_running_example ; 10scvjavaoldhinted2 ; 0:00.03  ; 30svaphor ; 0:00.01  ; 120sz3 ; unknown      ; 0:00.97 
+NSAD2020_running_example ; 10scvjavaoldhinted2 ; 0:00.03  ; dataabs2 ; 0:00.07  ; 120sz3 ; unknown      ; 0:03.06 
+NSAD2020_running_example ; 10scvjavaoldhinted2 ; 0:00.03  ; dataabs2acker ; 0:00.06  ; 120sz3 ; sat      ; 0:04.67 
+NSAD2020_running_example ; 10scvjavaoldhinted2 ; 0:00.03  ; dataabs2c2 ; 0:00.13  ; 120sz3 ; timeout solver      ; 2:00.05 
+NSAD2020_running_example ; 10scvjavaoldhinted2 ; 0:00.03  ; dataabs2c2acker ; 0:00.20  ; 120sz3 ; sat      ; 1:38.97 
+NSAD2020_running_example ; 10scvjavaoldhinted2 ; 0:00.03  ; noabs ; 0:00.00  ; 120sz3 ; unknown      ; 0:00.71 

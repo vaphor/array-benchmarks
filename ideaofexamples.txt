@@ -1,0 +1,62 @@
+##ArrayCreation
+
+initzero : Array
+initid : Array
+initcte : Array
+initpermut [1,n] : Array
+
+
+##operations retrieving indices
+min : Array -> Index
+max : Array -> Index
+find : Array -> Index
+find_last : Array -> Index
+find_first/second/..._occurence : Array -> Index
+binary_find : Array -> Index
+find_subarray : Array -> Array -> Index
+
+##Properties over the array
+unique (checks if all values are different) : Array -> Bool
+is_odd/even_array : Array -> Bool
+is_bigger/smaller_than : Array -> Int -> Bool
+is_sorted : : Array -> Bool
+
+##Properties over multiple arrays
+are_equal : Array -> Array -> Bool
+partialeq : Array -> Array -> Index -> Index -> Bool
+
+##Array modification
+append : Array -> Array
+insert_front : Array -> Val -> Array
+insert_from_position : Array -> Val -> Index -> Array
+remove_last : Array -> Array
+remove_front : Array -> Array
+remove_from_position : Array -> Index -> Array
+remove_all : Array -> Val -> Array
+replace : Array -> Val -> Val -> Array
+copy : Array -> Array
+subarray : Array -> Index -> Index -> Array
+copyuntilfind : Array -> Val -> Array
+sort : Array -> Array
+mk_uniq : Array -> Array
+reverse : Array -> Array
+rotate : Array -> Int -> Array
+double : Array -> Array
+filter_elements_smaller : Array -> Val -> Array
+
+##Combining arrays
+
+concat : Array -> Array -> Array
+swap : Array -> Array -> Array
+partialswap : Array -> Array -> Index -> Index -> Index -> Array
+merge_sorted : Array -> Array -> Array
+partition_bigger/smaller : Array -> Int -> Array, Array
+odd_even_merge : Array -> Array -> Array
+sum : Array -> Array -> Array
+max : Array -> Array -> Array
+
+
+
+
+
+
