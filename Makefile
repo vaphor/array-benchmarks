@@ -17,7 +17,7 @@ DATAABSTOOL?=$(PATH_MAIN_FOLDER)/DataAbstraction/dataabs
 DATAABS2TOOL?=$(PATH_MAIN_FOLDER)/dataabstractionpldi/vaphor
 VAPHORTOOL?=$(PATH_MAIN_FOLDER)/cellmorphingV2/vaphor
 Z3TOOL?=z3
-ELDARICATOOL?=eld
+ELDARICATOOL?=/home/julien/HornTools/eldarica-binary-dist/eld
 
 #######################SMT2FromExamples#######################################
 
@@ -31,7 +31,7 @@ ELDARICATOOL?=eld
 #  -The extention used in filenames to distinguish that preprocessor
 
 #We define several preprocessors : one to handle smt2 to files by just copying them, the others using our converter
-PREPROCESSORS?=JAVATOSMT2 JAVATOSMT2_1 JAVATOSMT2_2 JAVATOSMT2HINTED JAVATOSMT2HINTED1 JAVATOSMT2HINTED2 JAVATOSMT2HINTEDOLD JAVATOSMT2HINTEDOLD1 JAVATOSMT2HINTEDOLD2
+PREPROCESSORS?=JAVATOSMT2 JAVATOSMT2_1 JAVATOSMT2_2 JAVATOSMT2HINTED JAVATOSMT2HINTED1 JAVATOSMT2HINTED2
 
 CPSMT2_TOOL?=cat
 CPSMT2_TL?=2s
@@ -41,24 +41,24 @@ CPSMT2_EXT?=cp
 JAVATOSMT2_TOOL?=$(CONVERTERTOOL)
 JAVATOSMT2_TL?=10s
 JAVATOSMT2_EXP?=.java
-JAVATOSMT2_EXT?=$(JAVATOSMT2_TL)cvjava
+JAVATOSMT2_EXT?=$(JAVATOSMT2_TL)cvjava_nohints_pn0
 
 JAVATOSMT2_1_TOOL?=$(CONVERTERTOOL) -pn 1
 JAVATOSMT2_1_TL?=10s
 JAVATOSMT2_1_EXP?=.java
-JAVATOSMT2_1_EXT?=$(JAVATOSMT2_TL)cvjava1
+JAVATOSMT2_1_EXT?=$(JAVATOSMT2_TL)cvjava_nohints_pn1
 
 JAVATOSMT2_2_TOOL?=$(CONVERTERTOOL) -pn 2
 JAVATOSMT2_2_TL?=10s
 JAVATOSMT2_2_EXP?=.java
-JAVATOSMT2_2_EXT?=$(JAVATOSMT2_TL)cvjava2
+JAVATOSMT2_2_EXT?=$(JAVATOSMT2_TL)cvjava_nohints_pn2
 
 
 
 JAVATOSMT2HINTED_TOOL?=$(CONVERTERTOOL) -hints
 JAVATOSMT2HINTED_TL?=10s
 JAVATOSMT2HINTED_EXP?=.java
-JAVATOSMT2HINTED_EXT?=$(JAVATOSMT2_TL)cvjavahinted
+JAVATOSMT2HINTED_EXT?=$(JAVATOSMT2_TL)cvjava_hinted_pn0
 
 
 JAVATOSMT2HINTEDOLD_TOOL?=$(dir $(CONVERTERTOOL))/converterhinted
@@ -69,7 +69,7 @@ JAVATOSMT2HINTEDOLD_EXT?=$(JAVATOSMT2_TL)cvjavaoldhinted
 JAVATOSMT2HINTED1_TOOL?=$(CONVERTERTOOL) -hints -pn 1
 JAVATOSMT2HINTED1_TL?=10s
 JAVATOSMT2HINTED1_EXP?=.java
-JAVATOSMT2HINTED1_EXT?=$(JAVATOSMT2_TL)cvjavahinted1
+JAVATOSMT2HINTED1_EXT?=$(JAVATOSMT2_TL)cvjava_hinted_pn1
 
 
 JAVATOSMT2HINTEDOLD1_TOOL?=$(dir $(CONVERTERTOOL))/converterhinted -pn 1
@@ -80,7 +80,7 @@ JAVATOSMT2HINTEDOLD1_EXT?=$(JAVATOSMT2_TL)cvjavaoldhinted1
 JAVATOSMT2HINTED2_TOOL?=$(CONVERTERTOOL) -hints -pn 2
 JAVATOSMT2HINTED2_TL?=10s
 JAVATOSMT2HINTED2_EXP?=.java
-JAVATOSMT2HINTED2_EXT?=$(JAVATOSMT2_TL)cvjavahinted2
+JAVATOSMT2HINTED2_EXT?=$(JAVATOSMT2_TL)cvjava_hinted_pn2
 
 
 JAVATOSMT2HINTEDOLD2_TOOL?=$(dir $(CONVERTERTOOL))/converterhinted -pn 2
@@ -134,15 +134,36 @@ $(foreach preprocess,$(PREPROCESSORS),$(eval $(call mk_preprocess_rule,$(preproc
 #  -The new data abstraction tool
 #  -The new data abstraction tool with ackermanisation
 
-ABSTOOLS=ABSNONE DATAABS2 VAPHOR DATAABS DATAABSACKER DATAABS2ACKER DATAABS2ACKERC2 DATAABS2C2
+ABSTOOLS=ABSNONE VAPHOR VAPHORC2 DATAABS2 DATAABS2ACKER DATAABS2ACKERC2 DATAABS2C2
 
 ABSNONE_TOOL?=./cpo
 ABSNONE_TL?=3s
 ABSNONE_EXT?=noabs
 
+
 VAPHOR_TOOL?=$(VAPHORTOOL)
-VAPHOR_TL?=30s
-VAPHOR_EXT?=$(VAPHOR_TL)vaphor
+VAPHOR_TL?=3s
+VAPHOR_EXT?=vaphor_cell1
+
+VAPHORC2_TOOL?=$(VAPHORTOOL) -distinct 2
+VAPHORC2_TL?=3s
+VAPHORC2_EXT?=vaphor_cell2
+
+DATAABS2_TOOL?=$(DATAABS2TOOL)
+DATAABS2_TL?=3s
+DATAABS2_EXT?=sastool_basic_cell1
+
+DATAABS2ACKER_TOOL?=$(DATAABS2TOOL) -acker
+DATAABS2ACKER_TL?=3s
+DATAABS2ACKER_EXT?=sastool_acker_cell1
+
+DATAABS2C2_TOOL?=$(DATAABS2TOOL) -distinct 2
+DATAABS2C2_TL?=3s
+DATAABS2C2_EXT?=sastool_basic_cell2
+
+DATAABS2ACKERC2_TOOL?=$(DATAABS2TOOL) -distinct 2 -acker
+DATAABS2ACKERC2_TL?=3s
+DATAABS2ACKERC2_EXT?=sastool_acker_cell2
 
 DATAABS_TOOL?=$(DATAABSTOOL)
 DATAABS_TL?=120s
@@ -151,22 +172,6 @@ DATAABS_EXT?=$(DATAABS_TL)databs
 DATAABSACKER_TOOL?=$(DATAABSTOOL) -acker
 DATAABSACKER_TL?=120s
 DATAABSACKER_EXT?=$(DATAABS_TL)databsacker
-
-DATAABS2_TOOL?=$(DATAABS2TOOL)
-DATAABS2_TL?=32s
-DATAABS2_EXT?=dataabs2
-
-DATAABS2ACKER_TOOL?=$(DATAABS2TOOL) -acker
-DATAABS2ACKER_TL?=32s
-DATAABS2ACKER_EXT?=dataabs2acker
-
-DATAABS2C2_TOOL?=$(DATAABS2TOOL) -distinct 2
-DATAABS2C2_TL?=32s
-DATAABS2C2_EXT?=dataabs2c2
-
-DATAABS2ACKERC2_TOOL?=$(DATAABS2TOOL) -distinct 2 -acker
-DATAABS2ACKERC2_TL?=32s
-DATAABS2ACKERC2_EXT?=dataabs2c2acker
 
 #Rules to make abstracted smt2. We define the variable ABSEXAMPLES containing #SMT2EXAMPLES * #ABSTOOLS files.
 #NOTE : we also generate a file .time to keep time info and .error when there is an error
@@ -212,11 +217,11 @@ $(foreach abstool,$(ABSTOOLS),$(eval $(call mk_abs_rule,$(abstool))))
 SOLVERS=Z3
 
 Z3_TOOL?=$(Z3TOOL)
-Z3_TL?=120s
-Z3_EXT?=$(Z3_TL)z3
+Z3_TL?=3s
+Z3_EXT?=z3
 
 ELDARICA_TOOL?=$(ELDARICATOOL)
-ELDARICA_TL?=30s
+ELDARICA_TL?=40s
 ELDARICA_EXT?=$(ELDARICA_TL)eld
 
 #Rules to make the final result. We define the variable RESULTS containing #ABSEXAMPLES * #SOLVERS files.
@@ -280,14 +285,24 @@ res.csv: $(RESULTS)
 	    abstime=$$(cat $$file | grep ";timeabs=" | sed -E 's,;timeabs=,,' | tr '\n' ' ') ; \
 	    solvetime=$$(cat $$file | grep ";timesolving=" | sed -E 's,;timesolving=,,' | tr '\n' ' ') ; \
 	    echo "$${pfile} $(SEP) $${preprocess} $(SEP) $${preprocesstime} $(SEP) $${abs} $(SEP) $${abstime} $(SEP) $${solver} $(SEP) $${result} $(SEP) $${solvetime}" ; \
-	done | sort | (echo 'file $(SEP) preprocess $(SEP) preprocesstime $(SEP) abs $(SEP) abstime $(SEP) solver $(SEP) result $(SEP) solvetime' && cat) | tr '$(SEP)' ';' > res.csv 
+	done | sort | (echo 'file $(SEP) preprocess $(SEP) preprocesstime $(SEP) abs $(SEP) abstime $(SEP) solver $(SEP) result $(SEP) solvetime' && cat) | tr '$(SEP)' ';' | tr -d ' ' > res.csv 
 	@cat $@ | column -t -s ';'
 	@echo ' '
 	@echo ' '
 	
-pivot_table.csv: res.csv
-	@cat res.csv | sed -E 's,([^;]*);([^;]*);([^;]*);([^;]*);([^;]*);([^;]*);([^;]*);(.*),\1;\4 \6;\7,'| datamash --header-in --field-separator=\; crosstab 1,2 unique 3 > $@
-	@(echo -n '  file ' && cat $@) | column -t -s ';'
+analysis.csv:res.csv analysis.sql
+	@sqlite3 < analysis.sql > $@
+	
+analysis_sas.csv:analysis.csv analysis_sas.sql
+	@sqlite3 < analysis_sas.sql > $@
+	
+pivot_table.csv: analysis.csv
+	@cat $^ | sed -E 's,([^;]*);([^;]*);([^;]*);([^;]*);([^;]*),\1;\3 cell\2 \4;\5,'| datamash --header-in --field-separator=\; crosstab 1,2 unique 3 | sed -E 's,N/A,0,g' | sed -E 's,cellNA,,g' > $@
+	@(echo -n '  ftype ' && cat $@) 
+
+pivot_table_sas.csv: analysis_sas.csv
+	@cat $^ | sed -E 's,([^;]*);([^;]*);([^;]*);([^;]*);([^;]*),\1;\3 cell\2 \4;\5,'| datamash --header-in --field-separator=\; crosstab 1,2 unique 3 | sed -E 's,N/A,0,g' | sed -E 's,cellNA,,g' > $@
+	@(echo -n '  ftype ' && cat $@) 
 
 .PHONY: pivot_table.csv res.csv
 #######################CLEANING###########################################
