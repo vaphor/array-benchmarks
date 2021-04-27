@@ -6,6 +6,7 @@
 PATH_MAIN_FOLDER?=..
 EXAMPLES_FOLDER?=Examples
 BUILD_FOLDER?=Build
+RESULT_FOLDER?=Result
 #Separator to use. Careful, it must not be used within your filenames, nor interfere with make, bash, sed, ...  This is a problem at the moment
 SEP?=-
 BENCHMARKS?=$(shell find $(EXAMPLES_FOLDER) -type f)
@@ -14,7 +15,6 @@ BENCHMARKS?=$(shell find $(EXAMPLES_FOLDER) -type f)
 
 CONVERTERTOOL?=$(PATH_MAIN_FOLDER)/hornconverter/converter
 DATAABSTOOL?=$(PATH_MAIN_FOLDER)/DataAbstraction/dataabs
-DATAABS2TOOL?=$(PATH_MAIN_FOLDER)/dataabstractionpldi/vaphor
 VAPHORTOOL?=$(PATH_MAIN_FOLDER)/cellmorphingV2/vaphor
 Z3TOOL?=z3
 ELDARICATOOL?=/home/julien/HornTools/eldarica-binary-dist/eld
@@ -136,7 +136,7 @@ $(foreach preprocess,$(PREPROCESSORS),$(eval $(call mk_preprocess_rule,$(preproc
 
 ABSTOOLS=ABSNONE VAPHOR VAPHORC2 DATAABS2 DATAABS2ACKER DATAABS2ACKERC2 DATAABS2C2
 
-ABSNONE_TOOL?=./cpo
+ABSNONE_TOOL?=src/cpo
 ABSNONE_TL?=3s
 ABSNONE_EXT?=noabs
 
@@ -149,29 +149,22 @@ VAPHORC2_TOOL?=$(VAPHORTOOL) -distinct 2
 VAPHORC2_TL?=3s
 VAPHORC2_EXT?=vaphor_cell2
 
-DATAABS2_TOOL?=$(DATAABS2TOOL)
-DATAABS2_TL?=3s
-DATAABS2_EXT?=sastool_basic_cell1
-
-DATAABS2ACKER_TOOL?=$(DATAABS2TOOL) -acker
-DATAABS2ACKER_TL?=3s
-DATAABS2ACKER_EXT?=sastool_acker_cell1
-
-DATAABS2C2_TOOL?=$(DATAABS2TOOL) -distinct 2
-DATAABS2C2_TL?=3s
-DATAABS2C2_EXT?=sastool_basic_cell2
-
-DATAABS2ACKERC2_TOOL?=$(DATAABS2TOOL) -distinct 2 -acker
-DATAABS2ACKERC2_TL?=3s
-DATAABS2ACKERC2_EXT?=sastool_acker_cell2
-
 DATAABS_TOOL?=$(DATAABSTOOL)
-DATAABS_TL?=120s
-DATAABS_EXT?=$(DATAABS_TL)databs
+DATAABS_TL?=3s
+DATAABS_EXT?=dataabs_basic_cell1
 
 DATAABSACKER_TOOL?=$(DATAABSTOOL) -acker
-DATAABSACKER_TL?=120s
-DATAABSACKER_EXT?=$(DATAABS_TL)databsacker
+DATAABSACKER_TL?=3s
+DATAABSACKER_EXT?=dataabs_acker_cell1
+
+DATAABSC2_TOOL?=$(DATAABSTOOL) -distinct 2
+DATAABSC2_TL?=3s
+DATAABSC2_EXT?=dataabs_basic_cell2
+
+DATAABSACKERC2_TOOL?=$(DATAABSTOOL) -distinct 2 -acker
+DATAABSACKERC2_TL?=3s
+DATAABSACKERC2_EXT?=dataabs_acker_cell2
+
 
 #Rules to make abstracted smt2. We define the variable ABSEXAMPLES containing #SMT2EXAMPLES * #ABSTOOLS files.
 #NOTE : we also generate a file .time to keep time info and .error when there is an error
@@ -270,10 +263,11 @@ $(info A total of  $(NUM_RES) results expected)
 
 #######################GATHERING RESULTS###########################################
 
-.DEFAULT_GOAL := res.csv
+.DEFAULT_GOAL := $(RESULT_FOLDER)/res.csv
 
 #We gather the results in a csv file...
-res.csv: $(RESULTS)
+$(RESULT_FOLDER)/res.csv: $(RESULTS)
+	@mkdir -p $$(dirname $@)
 	@for file in $(RESULTS); do \
 	    format="$(BUILD_FOLDER)/Results/([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^\.]*).res" ;\
 	    pfile=$$(echo $$file | sed -E "s;$(BUILD_FOLDER)/Results/([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^\.]*).res;\1;"); \
@@ -285,29 +279,27 @@ res.csv: $(RESULTS)
 	    abstime=$$(cat $$file | grep ";timeabs=" | sed -E 's,;timeabs=,,' | tr '\n' ' ') ; \
 	    solvetime=$$(cat $$file | grep ";timesolving=" | sed -E 's,;timesolving=,,' | tr '\n' ' ') ; \
 	    echo "$${pfile} $(SEP) $${preprocess} $(SEP) $${preprocesstime} $(SEP) $${abs} $(SEP) $${abstime} $(SEP) $${solver} $(SEP) $${result} $(SEP) $${solvetime}" ; \
-	done | sort | (echo 'file $(SEP) preprocess $(SEP) preprocesstime $(SEP) abs $(SEP) abstime $(SEP) solver $(SEP) result $(SEP) solvetime' && cat) | tr '$(SEP)' ';' | tr -d ' ' > res.csv 
+	done | sort | (echo 'file $(SEP) preprocess $(SEP) preprocesstime $(SEP) abs $(SEP) abstime $(SEP) solver $(SEP) result $(SEP) solvetime' && cat) | tr '$(SEP)' ';' | tr -d ' ' > $
 	@cat $@ | column -t -s ';'
 	@echo ' '
 	@echo ' '
 	
-analysis.csv:res.csv analysis.sql
-	@sqlite3 < analysis.sql > $@
+$(RESULT_FOLDER)/analysis.csv: $(RESULT_FOLDER)/res.csv src/analysis.sql
+	@sqlite3 < src/analysis.sql > $@
 	
-analysis_sas.csv:analysis.csv analysis_sas.sql
-	@sqlite3 < analysis_sas.sql > $@
+$(RESULT_FOLDER)/analysis_trimmed.csv: $(RESULT_FOLDER)/analysis.csv src/analysis_trimmed.sql
+	@sqlite3 < src/analysis_trimmed.sql > $@
 	
-pivot_table.csv: analysis.csv
+$(RESULT_FOLDER)/pivot_table.csv: $(RESULT_FOLDER)/analysis.csv
 	@cat $^ | sed -E 's,([^;]*);([^;]*);([^;]*);([^;]*);([^;]*),\1;\3 cell\2 \4;\5,'| datamash --header-in --field-separator=\; crosstab 1,2 unique 3 | sed -E 's,N/A,0,g' | sed -E 's,cellNA,,g' > $@
 	@(echo -n '  ftype ' && cat $@) 
 
-pivot_table_sas.csv: analysis_sas.csv
+$(RESULT_FOLDER)/pivot_table_trimmed.csv: $(RESULT_FOLDER)/analysis_trimmed.csv
 	@cat $^ | sed -E 's,([^;]*);([^;]*);([^;]*);([^;]*);([^;]*),\1;\3 cell\2 \4;\5,'| datamash --header-in --field-separator=\; crosstab 1,2 unique 3 | sed -E 's,N/A,0,g' | sed -E 's,cellNA,,g' > $@
 	@(echo -n '  ftype ' && cat $@) 
 
-.PHONY: pivot_table.csv res.csv
 #######################CLEANING###########################################
 clean:
-	@echo "Removing files in $(BUILD_FOLDER)"
-	@rm -rf $(BUILD_FOLDER)/
-	@rm -f res.csv
+	@echo "Removing files in $(BUILD_FOLDER) $(RESULT_FOLDER)"
+	@rm -rf $(BUILD_FOLDER)/ $(RESULT_FOLDER)
 	
