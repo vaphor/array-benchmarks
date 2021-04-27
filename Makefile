@@ -15,9 +15,9 @@ BENCHMARKS?=$(shell find $(EXAMPLES_FOLDER) -type f)
 
 CONVERTERTOOL?=$(PATH_MAIN_FOLDER)/hornconverter/converter
 DATAABSTOOL?=$(PATH_MAIN_FOLDER)/DataAbstraction/dataabs
-VAPHORTOOL?=$(PATH_MAIN_FOLDER)/cellmorphingV2/vaphor
+VAPHORTOOL?=$(PATH_MAIN_FOLDER)/CellMorphing/vaphor
 Z3TOOL?=z3
-ELDARICATOOL?=/home/julien/HornTools/eldarica-binary-dist/eld
+ELDARICATOOL?=eld
 
 #######################SMT2FromExamples#######################################
 

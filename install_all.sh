@@ -5,10 +5,10 @@ git checkout $tag
 
 cd ..
 echo "Cloning and checking out to $tag commit of Vaphor Tool"
-git clone "https://github.com/vaphor/cellmorphingV2.git"
+git clone "git@github.com:vaphor/CellMorphing.git"
 git checkout $tag
 echo "Making Vaphor executable"
-cd "cellmorphingV2"
+cd "CellMorphing"
 make
 cd ..
 
