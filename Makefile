@@ -134,7 +134,7 @@ $(foreach preprocess,$(PREPROCESSORS),$(eval $(call mk_preprocess_rule,$(preproc
 #  -The new data abstraction tool
 #  -The new data abstraction tool with ackermanisation
 
-ABSTOOLS=ABSNONE VAPHOR VAPHORC2 DATAABS2 DATAABS2ACKER DATAABS2ACKERC2 DATAABS2C2
+ABSTOOLS=ABSNONE VAPHOR VAPHORC2 DATAABS DATAABSACKER DATAABSACKERC2 DATAABSC2
 
 ABSNONE_TOOL?=src/cpo
 ABSNONE_TL?=3s
