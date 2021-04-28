@@ -285,10 +285,10 @@ $(RESULT_FOLDER)/res.csv: $(RESULTS)
 	@echo ' '
 	
 $(RESULT_FOLDER)/analysis.csv: $(RESULT_FOLDER)/res.csv src/analysis.sql
-	@sqlite3 < src/analysis.sql > $@
+	@cat src/analysis.sql | sed -E "s;!resfile!;$(RESULT_FOLDER)/res.csv;" |  sqlite3 > $@
 	
 $(RESULT_FOLDER)/analysis_trimmed.csv: $(RESULT_FOLDER)/analysis.csv src/analysis_trimmed.sql
-	@sqlite3 < src/analysis_trimmed.sql > $@
+	@cat src/analysis_trimmed.sql | sed -E "s;!analysisfile!;$(RESULT_FOLDER)/analysis.csv;" |  sqlite3 > $@
 	
 $(RESULT_FOLDER)/pivot_table.csv: $(RESULT_FOLDER)/analysis.csv
 	@cat $^ | sed -E 's,([^;]*);([^;]*);([^;]*);([^;]*);([^;]*),\1;\3 cell\2 \4;\5,'| datamash --header-in --field-separator=\; crosstab 1,2 unique 3 | sed -E 's,N/A,0,g' | sed -E 's,cellNA,,g' > $@

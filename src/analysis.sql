@@ -1,7 +1,7 @@
-
+-- .param set :resfile %1
 .mode csv
 .separator ;
-.import res.csv Bench
+.import !resfile! Bench
 .headers on
 .separator ;
 
