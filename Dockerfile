@@ -16,6 +16,6 @@ RUN apt install bsdmainutils -y
 RUN git config --global advice.detachedHead false
 RUN mkdir Tools
 RUN cd Tools && git clone "https://github.com/vaphor/array-benchmarks.git" 
-RUN cd Tools && cat array-benchmarks/install_all.sh | sed 's;git@github.com:vaphor/;https://github.com/vaphor/;' | sed 's;make -j4;;' > array-benchmarks/install.sh 
+RUN cd Tools && cat array-benchmarks/install_all.sh | sed 's;git@github.com:vaphor/;https://github.com/vaphor/;' > array-benchmarks/install.sh 
 RUN cd Tools && chmod +x array-benchmarks/install.sh 
 RUN cd Tools/array-benchmarks && eval `opam config env` && ./install.sh
