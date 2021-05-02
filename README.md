@@ -65,7 +65,7 @@ While the command is running, you should:
 2. See files being created one by one
 3. View a result table once computation is finished
 
-## Viewing the results
+## The results
 
 The intermediate files are available in the *Build* folder and the result files are available in the *Result* folder.
 The intermediate files are divided in three:
@@ -82,6 +82,7 @@ The Result folder contains two files
    We use two aggregation functions: average and exists, corresponding to columns *avgexp* and *nbexists*.
    The results are then summed over the files of each category (nothinted, hinted, buggy). 
 
+As an example, you can look at the files used for the SAS2021 paper here: [build folder](https://gitlab.inria.fr/jbraine/archives/-/tree/master/Build_SAS21_PAPER), [result folder](https://gitlab.inria.fr/jbraine/archives/-/tree/master/Result_SAS21_PAPER).
 
 ## Changing/Parametrizing the toolchain
 
