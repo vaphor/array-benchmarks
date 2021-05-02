@@ -59,7 +59,7 @@ The default configuration uses:
 2. No abstraction, [CellMorphing](https://github.com/vaphor/CellMorphing) with n=1 and n=2, and [data abstraction](https://github.com/vaphor/DataAbstraction) with n=1 and n=2 and with and without ackermanisation.
 3. The Z3 solver with two different random seeds for spacer.
 
-Run `make Z3_SOLVER_TL=5s`. This runs the benchmarks with 5s as time limit and should take around 30minutes.
+Run `make Z3_SOLVER_TL=5s`. This runs the benchmarks with 5s as time limit and should take around __1h30minutes__. This can be sped up using `make -j4` for example.
 While the command is running, you should:
 1. See information on the tools found/notfound and the number of files being built.
 2. See files being created one by one
