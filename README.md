@@ -14,7 +14,7 @@ The verification of assertions in programs with arrays is done in three steps:
 
 ### Using the docker file
 
-We provide a docker image file [array-benchmarks.tar](linktodo). To use the docker image, 
+We provide a docker image file [array-benchmarks.tar](https://gitlab.inria.fr/jbraine/archives/-/blob/master/array-benchmarks.tar). To use the docker image, 
 - Load the docker image dataabs abs using : `docker load -i array-benchmarks.tar`
 - Run the docker image interactively using : `docker run -it array-benchmarks /bin/bash`
 - Go to the array benchmarks folder : `cd Tools/array-benchmarks`
