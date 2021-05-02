@@ -59,7 +59,7 @@ The default configuration uses:
 2. No abstraction, [CellMorphing](https://github.com/vaphor/CellMorphing) with n=1 and n=2, and [data abstraction](https://github.com/vaphor/DataAbstraction) with n=1 and n=2 and with and without ackermanisation.
 3. The Z3 solver with two different random seeds for spacer.
 
-Run `make Z3_TL=5s`. This runs the benchmarks with 5s as time limit and should take around 30minutes.
+Run `make Z3_SOLVER_TL=5s`. This runs the benchmarks with 5s as time limit and should take around 30minutes.
 While the command is running, you should:
 1. See information on the tools found/notfound and the number of files being built.
 2. See files being created one by one
@@ -86,8 +86,8 @@ The Result folder contains two files
 ## Changing/Parametrizing the toolchain
 
 The simplest change consists in changing the timelimit used for Z3. 
-This can be achieved by either changing the variable *Z3_TL* in the makefile or by running 
-`make Z3_TL=MyTIMELIMIT`.
+This can be achieved by either changing the variable *Z3_SOLVER_TL* in the makefile or by running 
+`make Z3_SOLVER_TL=MyTIMELIMIT`.
 
 To add/remove/change options of tools one should edit the *Makefile*.
 The list of converters (respectively abstractions, solvers) used is defined by the variable *PREPROCESSORS* (respectively *ABSTOOLS*, *SOLVERS*)
