@@ -98,5 +98,5 @@ Note that we generate multiple solvers for Z3 for each random seed.
 The number of randomseed instances of Z3 used can be changed through the 3 following variables (representing lists of random seeds)
 1. `SATRD?=0` states that the only seed for the option `sat.random_seed` of Z3 is 0. One may add the random seed 1 by setting `SATRD?=0 1`
 2. `SLSRD?=0` states that the only seed for the option `sls.random_seed` of Z3 is 0. One may add the random seed 1 by setting `SLSRD?=0 1`
-3. `SPACERRD?=0 1` states that we launch Z3 twice, one with the option `fp.spacer.random_seed=0` and once with the option `fp.spacer.random_seed=1`
+3. `SPACERRD?=0 1` states that we launch Z3 twice, once with the option `fp.spacer.random_seed=0` and once with the option `fp.spacer.random_seed=1`
 
