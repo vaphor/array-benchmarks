@@ -17,7 +17,7 @@ RUN apt install grip -y
 RUN git config --global advice.detachedHead false
 RUN mkdir Tools
 # Invalidate the cache
-ADD http://www.convert-unix-time.com/api?timestamp=now /tmp/bustcache
+ADD "https://www.random.org/cgi-bin/randbyte?nbytes=10&format=h" skipcache
 RUN cd Tools && git clone "https://github.com/vaphor/array-benchmarks.git" 
 RUN cd Tools && cat array-benchmarks/install_all.sh | sed 's;git@github.com:vaphor/;https://github.com/vaphor/;' > array-benchmarks/install.sh 
 RUN cd Tools && chmod +x array-benchmarks/install.sh 
