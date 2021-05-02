@@ -13,6 +13,7 @@ RUN opam install hmap -y
 RUN opam install ocamlbuild -y
 RUN apt install sqlite3 -y
 RUN apt install bsdmainutils -y
+RUN apt install grip -y
 RUN git config --global advice.detachedHead false
 RUN mkdir Tools
 RUN cd Tools && git clone "https://github.com/vaphor/array-benchmarks.git" 
