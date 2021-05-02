@@ -143,11 +143,11 @@ DATAABSACKER_TOOL?=$(DATAABSTOOL) -acker
 DATAABSACKER_TL?=$(ABSTOOL_TL)
 DATAABSACKER_EXT?=dataabs_acker_cell1
 
-DATAABSC2_TOOL?=$(DATAABSTOOL) -distinct 2
+DATAABSC2_TOOL?=$(DATAABSTOOL) -nbcells 2
 DATAABSC2_TL?=$(ABSTOOL_TL)
 DATAABSC2_EXT?=dataabs_basic_cell2
 
-DATAABSACKERC2_TOOL?=$(DATAABSTOOL) -distinct 2 -acker
+DATAABSACKERC2_TOOL?=$(DATAABSTOOL) -nbcells 2 -acker
 DATAABSACKERC2_TL?=$(ABSTOOL_TL)
 DATAABSACKERC2_EXT?=dataabs_acker_cell2
 
@@ -286,7 +286,11 @@ all:$(RESULT_FOLDER)/analysis.csv
 smt2:$(SMT2EXAMPLES)
 abstracted:$(ABSEXAMPLES)
 results:$(RESULTS)
-.phony: all smt2 abstracted results
+
+readme: 
+	grip -b README.md
+
+.phony: all smt2 abstracted results readme
 .SECONDARY:$(RESULT_FOLDER)/res.csv 
 
 #######################CLEANING###########################################
