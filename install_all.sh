@@ -31,7 +31,3 @@ cd ..
 
 echo "Going back to benchmarks"
 cd "array-benchmarks"
-echo "Building results"
-make -j4
-
-echo "Results can be found in the res.csv file. Note that the $tag benchmarks of the paper were solved using Z3 version 4.8.8 - 64 bit"
