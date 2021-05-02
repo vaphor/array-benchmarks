@@ -1,4 +1,0 @@
-;noabs  #correct;noabs  >=correct;us_acker cell1 #correct;us_acker cell1 >=correct;us_acker cell2 #correct;us_acker cell2 >=correct;us_noacker cell1 #correct;us_noacker cell1 >=correct;vaphor cell1 #correct;vaphor cell1 >=correct;vaphor cell2 #correct;vaphor cell2 >=correct
-buggy;12;4;12;4;3;1;12;4;12;4;12;4
-hinted;0;0;30;12;15;5;24;10;8;4;0;0
-nothinted;0;0;12;4;9;3;0;0;3;1;0;0

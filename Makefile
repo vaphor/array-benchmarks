@@ -31,62 +31,44 @@ ELDARICATOOL?=eld
 #  -The extention used in filenames to distinguish that preprocessor
 
 #We define several preprocessors : one to handle smt2 to files by just copying them, the others using our converter
-PREPROCESSORS?=JAVATOSMT2 JAVATOSMT2_1 JAVATOSMT2_2 JAVATOSMT2HINTED JAVATOSMT2HINTED1 JAVATOSMT2HINTED2
-
-CPSMT2_TOOL?=cat
-CPSMT2_TL?=2s
-CPSMT2_EXP?=.smt2
-CPSMT2_EXT?=cp
+PREPROCESSORS+=JAVATOSMT2 JAVATOSMT2_1 JAVATOSMT2_2 JAVATOSMT2HINTED JAVATOSMT2HINTED1 JAVATOSMT2HINTED2 
+PREPROCESSOR_TL?=600s
 
 JAVATOSMT2_TOOL?=$(CONVERTERTOOL)
-JAVATOSMT2_TL?=10s
+JAVATOSMT2_TL?=$(PREPROCESSOR_TL)
 JAVATOSMT2_EXP?=.java
 JAVATOSMT2_EXT?=$(JAVATOSMT2_TL)cvjava_nohints_pn0
 
 JAVATOSMT2_1_TOOL?=$(CONVERTERTOOL) -pn 1
-JAVATOSMT2_1_TL?=10s
+JAVATOSMT2_1_TL?=$(PREPROCESSOR_TL)
 JAVATOSMT2_1_EXP?=.java
 JAVATOSMT2_1_EXT?=$(JAVATOSMT2_TL)cvjava_nohints_pn1
 
 JAVATOSMT2_2_TOOL?=$(CONVERTERTOOL) -pn 2
-JAVATOSMT2_2_TL?=10s
+JAVATOSMT2_2_TL?=$(PREPROCESSOR_TL)
 JAVATOSMT2_2_EXP?=.java
 JAVATOSMT2_2_EXT?=$(JAVATOSMT2_TL)cvjava_nohints_pn2
 
 
-
 JAVATOSMT2HINTED_TOOL?=$(CONVERTERTOOL) -hints
-JAVATOSMT2HINTED_TL?=10s
+JAVATOSMT2HINTED_TL?=$(PREPROCESSOR_TL)
 JAVATOSMT2HINTED_EXP?=.java
 JAVATOSMT2HINTED_EXT?=$(JAVATOSMT2_TL)cvjava_hinted_pn0
 
-
-JAVATOSMT2HINTEDOLD_TOOL?=$(dir $(CONVERTERTOOL))/converterhinted
-JAVATOSMT2HINTEDOLD_TL?=10s
-JAVATOSMT2HINTEDOLD_EXP?=.java
-JAVATOSMT2HINTEDOLD_EXT?=$(JAVATOSMT2_TL)cvjavaoldhinted
-
 JAVATOSMT2HINTED1_TOOL?=$(CONVERTERTOOL) -hints -pn 1
-JAVATOSMT2HINTED1_TL?=10s
+JAVATOSMT2HINTED1_TL?=$(PREPROCESSOR_TL)
 JAVATOSMT2HINTED1_EXP?=.java
 JAVATOSMT2HINTED1_EXT?=$(JAVATOSMT2_TL)cvjava_hinted_pn1
-
-
-JAVATOSMT2HINTEDOLD1_TOOL?=$(dir $(CONVERTERTOOL))/converterhinted -pn 1
-JAVATOSMT2HINTEDOLD1_TL?=10s
-JAVATOSMT2HINTEDOLD1_EXP?=.java
-JAVATOSMT2HINTEDOLD1_EXT?=$(JAVATOSMT2_TL)cvjavaoldhinted1
 
 JAVATOSMT2HINTED2_TOOL?=$(CONVERTERTOOL) -hints -pn 2
 JAVATOSMT2HINTED2_TL?=10s
 JAVATOSMT2HINTED2_EXP?=.java
 JAVATOSMT2HINTED2_EXT?=$(JAVATOSMT2_TL)cvjava_hinted_pn2
 
-
-JAVATOSMT2HINTEDOLD2_TOOL?=$(dir $(CONVERTERTOOL))/converterhinted -pn 2
-JAVATOSMT2HINTEDOLD2_TL?=10s
-JAVATOSMT2HINTEDOLD2_EXP?=.java
-JAVATOSMT2HINTEDOLD2_EXT?=$(JAVATOSMT2_TL)cvjavaoldhinted2
+CPSMT2_TOOL?=cat
+CPSMT2_TL?=$(PREPROCESSOR_TL)
+CPSMT2_EXP?=.smt2
+CPSMT2_EXT?=cp
 
 #Rules to make the files from the preprocessors. We define two variables :
 # -EXAMPLES : contains all files dealt by at least one preprocessor
@@ -118,7 +100,9 @@ endef
 
 $(foreach preprocess,$(PREPROCESSORS),$(eval $(call mk_preprocess_rule,$(preprocess))))
 
-.PRECIOUS: $(SMT2EXAMPLES)
+.SECONDARY: $(SMT2EXAMPLES)
+
+# $(info smt2 files are $(SMT2EXAMPLES))
 
 #######################ABSTRACTION FROM EXAMPLES###############################
 
@@ -134,35 +118,37 @@ $(foreach preprocess,$(PREPROCESSORS),$(eval $(call mk_preprocess_rule,$(preproc
 #  -The new data abstraction tool
 #  -The new data abstraction tool with ackermanisation
 
-ABSTOOLS=ABSNONE VAPHOR VAPHORC2 DATAABS DATAABSACKER DATAABSACKERC2 DATAABSC2
+ABSTOOLS+=ABSNONE VAPHOR VAPHORC2 DATAABS DATAABSACKER DATAABSC2 DATAABSACKERC2
+ABSTOOL_TL?=1000s
+
 
 ABSNONE_TOOL?=src/cpo
-ABSNONE_TL?=3s
+ABSNONE_TL?=$(ABSTOOL_TL)
 ABSNONE_EXT?=noabs
 
 
 VAPHOR_TOOL?=$(VAPHORTOOL)
-VAPHOR_TL?=3s
+VAPHOR_TL?=$(ABSTOOL_TL)
 VAPHOR_EXT?=vaphor_cell1
 
 VAPHORC2_TOOL?=$(VAPHORTOOL) -distinct 2
-VAPHORC2_TL?=3s
+VAPHORC2_TL?=$(ABSTOOL_TL)
 VAPHORC2_EXT?=vaphor_cell2
 
 DATAABS_TOOL?=$(DATAABSTOOL)
-DATAABS_TL?=3s
+DATAABS_TL?=$(ABSTOOL_TL)
 DATAABS_EXT?=dataabs_basic_cell1
 
 DATAABSACKER_TOOL?=$(DATAABSTOOL) -acker
-DATAABSACKER_TL?=3s
+DATAABSACKER_TL?=$(ABSTOOL_TL)
 DATAABSACKER_EXT?=dataabs_acker_cell1
 
 DATAABSC2_TOOL?=$(DATAABSTOOL) -distinct 2
-DATAABSC2_TL?=3s
+DATAABSC2_TL?=$(ABSTOOL_TL)
 DATAABSC2_EXT?=dataabs_basic_cell2
 
 DATAABSACKERC2_TOOL?=$(DATAABSTOOL) -distinct 2 -acker
-DATAABSACKERC2_TL?=3s
+DATAABSACKERC2_TL?=$(ABSTOOL_TL)
 DATAABSACKERC2_EXT?=dataabs_acker_cell2
 
 
@@ -197,7 +183,7 @@ endef
 
 $(foreach abstool,$(ABSTOOLS),$(eval $(call mk_abs_rule,$(abstool))))
 
-.PRECIOUS: $(ABSEXAMPLES)
+.SECONDARY: $(ABSEXAMPLES)
 
 #######################FINAL SOLVING###########################################
 
@@ -207,15 +193,23 @@ $(foreach abstool,$(ABSTOOLS),$(eval $(call mk_abs_rule,$(abstool))))
 #  -A time limit
 #  -The extention used in filenames to distinguish that abstraction tool
 
-SOLVERS=Z3
 
-Z3_TOOL?=$(Z3TOOL)
-Z3_TL?=3s
-Z3_EXT?=z3
+Z3_SOLVER_TL?=40s
 
-ELDARICA_TOOL?=$(ELDARICATOOL)
-ELDARICA_TL?=40s
-ELDARICA_EXT?=$(ELDARICA_TL)eld
+define mk_z3_rule
+Z3_SATRD$(1)_SLSRD$(2)_SPACERRD$(3)_TOOL=$(Z3TOOL) sat.random_seed=$(1) sls.random_seed=$(2) fp.spacer.random_seed=$(3)
+Z3_SATRD$(1)_SLSRD$(2)_SPACERRD$(3)_TL=$(Z3_SOLVER_TL)
+Z3_SATRD$(1)_SLSRD$(2)_SPACERRD$(3)_EXT=z3_satrd$(1)_slsrd_$(2)_spacerrd$(3)_$(Z3_SOLVER_TL)
+Z3_SOLVERS+=Z3_SATRD$(1)_SLSRD$(2)_SPACERRD$(3)
+endef
+
+SATRD?=0
+SLSRD?=0
+SPACERRD?=0 1
+$(foreach satrd,$(SATRD),$(foreach slsrd,$(SLSRD),$(foreach spacerrd,$(SPACERRD),$(eval $(call mk_z3_rule,$(satrd),$(slsrd),$(spacerrd))))))
+
+
+SOLVERS+=$(Z3_SOLVERS)
 
 #Rules to make the final result. We define the variable RESULTS containing #ABSEXAMPLES * #SOLVERS files.
 #NOTE : we also generate a file .time to keep time info and .error when there is an error
@@ -249,7 +243,7 @@ endef
 
 $(foreach solver,$(SOLVERS),$(eval $(call mk_solver_rule,$(solver))))
 
-.PRECIOUS: $(RESULTS)
+.SECONDARY: $(RESULTS)
 
 #######################PRINTING INFORMATION###########################################
 
@@ -263,7 +257,7 @@ $(info A total of  $(NUM_RES) results expected)
 
 #######################GATHERING RESULTS###########################################
 
-.DEFAULT_GOAL := $(RESULT_FOLDER)/res.csv
+.DEFAULT_GOAL := $(RESULT_FOLDER)/analysis.csv
 
 #We gather the results in a csv file...
 $(RESULT_FOLDER)/res.csv: $(RESULTS)
@@ -287,16 +281,13 @@ $(RESULT_FOLDER)/res.csv: $(RESULTS)
 $(RESULT_FOLDER)/analysis.csv: $(RESULT_FOLDER)/res.csv src/analysis.sql
 	@cat src/analysis.sql | sed -E "s;!resfile!;$(RESULT_FOLDER)/res.csv;" |  sqlite3 > $@
 	
-$(RESULT_FOLDER)/analysis_trimmed.csv: $(RESULT_FOLDER)/analysis.csv src/analysis_trimmed.sql
-	@cat src/analysis_trimmed.sql | sed -E "s;!analysisfile!;$(RESULT_FOLDER)/analysis.csv;" |  sqlite3 > $@
 	
-$(RESULT_FOLDER)/pivot_table.csv: $(RESULT_FOLDER)/analysis.csv
-	@cat $^ | sed -E 's,([^;]*);([^;]*);([^;]*);([^;]*);([^;]*),\1;\3 cell\2 \4;\5,'| datamash --header-in --field-separator=\; crosstab 1,2 unique 3 | sed -E 's,N/A,0,g' | sed -E 's,cellNA,,g' > $@
-	@(echo -n '  ftype ' && cat $@) 
-
-$(RESULT_FOLDER)/pivot_table_trimmed.csv: $(RESULT_FOLDER)/analysis_trimmed.csv
-	@cat $^ | sed -E 's,([^;]*);([^;]*);([^;]*);([^;]*);([^;]*),\1;\3 cell\2 \4;\5,'| datamash --header-in --field-separator=\; crosstab 1,2 unique 3 | sed -E 's,N/A,0,g' | sed -E 's,cellNA,,g' > $@
-	@(echo -n '  ftype ' && cat $@) 
+all:$(RESULT_FOLDER)/analysis.csv
+smt2:$(SMT2EXAMPLES)
+abstracted:$(ABSEXAMPLES)
+results:$(RESULTS)
+.phony: all smt2 abstracted results
+.SECONDARY:$(RESULT_FOLDER)/res.csv 
 
 #######################CLEANING###########################################
 clean:
