@@ -82,7 +82,7 @@ The Result folder contains two files
    We use two aggregation functions: average and exists, corresponding to columns *avgexp* and *nbexists*.
    The results are then summed over the files of each category (nothinted, hinted, buggy). 
 
-As an example, you can look at the files used for the SAS2021 paper here: [build folder](https://gitlab.inria.fr/jbraine/archives/-/tree/master/Build_SAS21_PAPER), [result folder](https://gitlab.inria.fr/jbraine/archives/-/tree/master/Result_SAS21_PAPER).
+As an example, you can look at the files used for the SAS2021 paper here (generated in __7hours__ on a laptop computer with *-j4* and timeout 40s): [build folder](https://gitlab.inria.fr/jbraine/archives/-/tree/master/Build_SAS21_PAPER), [result folder](https://gitlab.inria.fr/jbraine/archives/-/tree/master/Result_SAS21_PAPER).
 
 ## Changing/Parametrizing the toolchain
 
