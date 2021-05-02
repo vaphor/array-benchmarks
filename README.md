@@ -7,8 +7,8 @@ The paper *Data Abstraction: A General Framework to Handle Program Verification 
 
 The verification of assertions in programs with arrays is done in three steps:
 1. Transform the verification problem into Horn clauses, perhaps using [MiniJavaConverter](https://github.com/vaphor/hornconverter) or [SeaHorn](https://github.com/seahorn/seahorn).
-2. Simplify the Horn clauses using [data abstraction](https://github.com/vaphor/DataAbstraction) [CellMorphing](https://github.com/vaphor/CellMorphing).
-3. Solve the Horn clauses using a Horn solver such as [Z3](https://github.com/Z3Prover/z3) [Eldarica](https://github.com/uuverifiers/eldarica).
+2. Simplify the Horn clauses using [data abstraction](https://github.com/vaphor/DataAbstraction) or [CellMorphing](https://github.com/vaphor/CellMorphing).
+3. Solve the Horn clauses using a Horn solver such as [Z3](https://github.com/Z3Prover/z3) or [Eldarica](https://github.com/uuverifiers/eldarica).
 
 ## Out of the box solutions
 
