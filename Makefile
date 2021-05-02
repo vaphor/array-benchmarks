@@ -1,7 +1,10 @@
 
 
 #######################Basic Configuration####################################
-
+ifdef ($(findstring .csv,$(MAKECMDGOALS)))
+$(info Printing configuration information)
+PRINT=yes
+endif
 
 PATH_MAIN_FOLDER?=..
 EXAMPLES_FOLDER?=Examples
@@ -88,6 +91,7 @@ $(BUILD_FOLDER)/SMT2/%$(SEP)$$($(1)_EXT).smt2: $(EXAMPLES_FOLDER)/%$$($(1)_EXP)
  	  fi
 $(1)_TOOLEXEC=$$(shell echo "$$($(1)_TOOL)" | cut -f 1 -d " ")
 $(1)_TOOLPATHOK=$$(shell type $$($(1)_TOOLEXEC) >/dev/null && echo "ok")
+ifdef $(PRINT)
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
 $$(info preprocess tool for $(1) found)
 $(1)_EXAMPLES=$$(shell echo $(BENCHMARKS) | tr ' ' '\n' | grep "$$($(1)_EXP)" | grep -v " " | grep -v "$(SEP)" | tr '\n' ' ')
@@ -95,6 +99,7 @@ EXAMPLES+=$$($(1)_EXAMPLES)
 SMT2EXAMPLES+=$$(subst $$($(1)_EXP),$(SEP)$$($(1)_EXT).smt2,$$(subst $(EXAMPLES_FOLDER)/,$(BUILD_FOLDER)/SMT2/,$$($(1)_EXAMPLES))) 
 else
 $$(info preprocess tool for $(1) has not been found. Continuing without generating the corresponding targets.)
+endif
 endif
 endef
 
@@ -173,11 +178,13 @@ $(BUILD_FOLDER)/ABSSMT2/%$(SEP)$$($(1)_EXT).smt2: $(BUILD_FOLDER)/SMT2/%.smt2
  	  fi
 $(1)_TOOLEXEC=$$(shell echo "$$($(1)_TOOL)" | cut -f 1 -d " ")
 $(1)_TOOLPATHOK=$$(shell type $$($(1)_TOOLEXEC) >/dev/null && echo "ok")
+ifdef $(PRINT)
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
 $$(info abstraction tool for $(1) found)
 ABSEXAMPLES+=$$(subst .smt2,$(SEP)$$($(1)_EXT).smt2,$$(subst /SMT2/,/ABSSMT2/,$$(SMT2EXAMPLES))) 
 else
 $$(info abstraction tool for $(1) has not been found. Continuing without generating the corresponding targets.)
+endif
 endif
 endef
 
@@ -233,11 +240,13 @@ $(BUILD_FOLDER)/Results/%$(SEP)$$($(1)_EXT).res: $(BUILD_FOLDER)/ABSSMT2/%.smt2
 	@echo ' ' >> $$@
 $(1)_TOOLEXEC=$$(shell echo "$$($(1)_TOOL)" | cut -f 1 -d " ")
 $(1)_TOOLPATHOK=$$(shell type $$($(1)_TOOLEXEC) >/dev/null && echo "ok")
+ifdef $(PRINT)
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
 $$(info solver tool for $(1) found)
 RESULTS+=$$(subst .smt2,$(SEP)$$($(1)_EXT).res,$$(subst /ABSSMT2/,/Results/,$$(ABSEXAMPLES))) 
 else
 $$(info solver tool for $(1) has not been found. Continuing without generating the corresponding targets.)
+endif
 endif
 endef
 
@@ -250,10 +259,12 @@ $(foreach solver,$(SOLVERS),$(eval $(call mk_solver_rule,$(solver))))
 NUM_SMT2=$(words $(SMT2EXAMPLES))
 NUM_ABS=$(words $(ABSEXAMPLES))
 NUM_RES=$(words $(RESULTS))
+ifdef $(PRINT)
 $(info Current configuration has :)
 $(info A total of  $(NUM_SMT2) inital smt2 files)
 $(info A total of  $(NUM_ABS)  of smt2 files after abstractions)
 $(info A total of  $(NUM_RES) results expected)
+endif
 
 #######################GATHERING RESULTS###########################################
 
@@ -289,8 +300,14 @@ results:$(RESULTS)
 
 readme: 
 	grip -b README.md
+	
+dockerimg: Dockerfile
+	docker build -t array-benchmarks .
+	
+array-benchmarks.tar: dockerimg
+	docker save array-benchmarks > $@
 
-.phony: all smt2 abstracted results readme
+.phony: all smt2 abstracted results readme dockerimg
 .SECONDARY:$(RESULT_FOLDER)/res.csv 
 
 #######################CLEANING###########################################
