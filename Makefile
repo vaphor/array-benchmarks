@@ -1,6 +1,11 @@
 
 
 #######################Basic Configuration####################################
+ifeq ($(MAKECMDGOALS),)
+$(info Printing configuration information)
+PRINT=yes
+endif
+
 ifneq ($(findstring .csv,$(MAKECMDGOALS)),)
 $(info Printing configuration information)
 PRINT=yes
