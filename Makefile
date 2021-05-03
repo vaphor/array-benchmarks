@@ -307,12 +307,15 @@ readme:
 	grip -b README.md
 	
 dockerimg: Dockerfile
-	docker build -t array-benchmarks .
+	docker build -t jbraine/data_abstraction_benchmarks .
 	
-array-benchmarks.tar: dockerimg
-	docker save array-benchmarks > $@
+dockerpush: Dockerfile
+	docker login --username=jbraine && docker push jbraine/data_abstraction_benchmarks
+	
+data_abstraction_benchmarks.tar: Dockerfile
+	docker save data_abstraction_benchmarks > $@
 
-.phony: all smt2 abstracted results readme dockerimg
+.phony: all smt2 abstracted results readme dockerimg dockerpush
 .SECONDARY:$(RESULT_FOLDER)/res.csv 
 
 #######################CLEANING###########################################

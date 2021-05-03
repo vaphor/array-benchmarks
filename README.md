@@ -5,7 +5,7 @@ The paper *Data Abstraction: A General Framework to Handle Program Verification 
 
 # Installing the toolchain
 
-__Note : If you are using the docker image, the toolchain is already installed.__
+__Note : If you are using the docker image, the toolchain is already installed. You should directly skip to the Running section__
 
 The verification of assertions in programs with arrays is done in three steps:
 1. Transform the verification problem into Horn clauses, perhaps using [MiniJavaConverter](https://github.com/vaphor/hornconverter) or [SeaHorn](https://github.com/seahorn/seahorn).
@@ -17,8 +17,8 @@ The verification of assertions in programs with arrays is done in three steps:
 ### Using the docker file
 
 We provide a docker image file [array-benchmarks.tar](https://hub.docker.com/repository/docker/jbraine/data_abstraction_benchmarks). To use the docker image, 
-- Load the docker image dataabs abs using : `docker load -i array-benchmarks.tar`
-- Run the docker image interactively using : `docker run -it array-benchmarks /bin/bash`
+- Load the docker image dataabs abs using : `docker pull jbraine/data_abstraction_benchmarks`
+- Run the docker image interactively using : `docker run -it data_abstraction_benchmarks /bin/bash`
 - Go to the array benchmarks folder : `cd Tools/array-benchmarks`
 
 ### Using *install.sh* 
@@ -66,6 +66,8 @@ While the command is running, you should:
 1. See information on the tools found/notfound and the number of files being built.
 2. See files being created one by one
 3. View a result table once computation is finished
+
+__Note : The Makefile does not use a dependency to the different tools. Therefore, if you update your tools, please run `make clean`__
 
 ## The results
 
