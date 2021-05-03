@@ -8,6 +8,8 @@ RUN apt install make -y
 RUN apt install ssh -y
 RUN apt install opam -y
 RUN apt install time -y
+RUN apt install screen -y
+RUN apt install tmux -y
 RUN opam init --disable-sandboxing
 RUN opam install hmap -y
 RUN opam install ocamlbuild -y
