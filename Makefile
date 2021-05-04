@@ -278,7 +278,7 @@ endif
 #We gather the results in a csv file...
 $(RESULT_FOLDER)/res.csv: $(RESULTS)
 	@mkdir -p $$(dirname $@)
-	@$(file >$(BUILD_FOLDER)/lists_of_targets.txt) $(foreach V,$(TEST),$(file >>$(BUILD_FOLDER)/lists_of_targets.txt,$V))
+	@$(file >$(BUILD_FOLDER)/lists_of_targets.txt) $(foreach V,$(RESULTS),$(file >>$(BUILD_FOLDER)/lists_of_targets.txt,$V))
 	@add_res()\
 	{\
 	    file=$$1;\
