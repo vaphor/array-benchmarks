@@ -278,7 +278,10 @@ endif
 #We gather the results in a csv file...
 $(RESULT_FOLDER)/res.csv: $(RESULTS)
 	@mkdir -p $$(dirname $@)
-	@for file in $(RESULTS); do \
+	@$($(BUILD_FOLDER)/lists_of_targets.txt>$@) $(foreach V,$(RESULTS),$($(BUILD_FOLDER)/lists_of_targets.txt>>$@,$V))
+	@add_res()\
+	{\
+	    file=$$1;\
 	    format="$(BUILD_FOLDER)/Results/([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^\.]*).res" ;\
 	    pfile=$$(echo $$file | sed -E "s;$(BUILD_FOLDER)/Results/([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^\.]*).res;\1;"); \
 	    preprocess=$$(echo $$file | sed -E "s;$(BUILD_FOLDER)/Results/([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^$(SEP)]*)$(SEP)([^\.]*).res;\2;"); \
@@ -288,11 +291,17 @@ $(RESULT_FOLDER)/res.csv: $(RESULTS)
 	    preprocesstime=$$(cat $$file | grep ";timepreprocess=" | sed -E 's,;timepreprocess=,,' | tr '\n' ' ') ; \
 	    abstime=$$(cat $$file | grep ";timeabs=" | sed -E 's,;timeabs=,,' | tr '\n' ' ') ; \
 	    solvetime=$$(cat $$file | grep ";timesolving=" | sed -E 's,;timesolving=,,' | tr '\n' ' ') ; \
-	    echo "$${pfile} $(SEP) $${preprocess} $(SEP) $${preprocesstime} $(SEP) $${abs} $(SEP) $${abstime} $(SEP) $${solver} $(SEP) $${result} $(SEP) $${solvetime}" ; \
-	done | sort | (echo 'file $(SEP) preprocess $(SEP) preprocesstime $(SEP) abs $(SEP) abstime $(SEP) solver $(SEP) result $(SEP) solvetime' && cat) | tr '$(SEP)' ';' | tr -d ' ' > $@
+	    echo "$${pfile} $(SEP) $${preprocess} $(SEP) $${preprocesstime} $(SEP) $${abs} $(SEP) $${abstime} $(SEP) $${solver} $(SEP) $${result} $(SEP) $${solvetime}" ;\
+	};\
+	cat $(BUILD_FOLDER)/lists_of_targets.txt | tr ' ' '\n' | grep "\S" | \
+	while read p; do \
+	  add_res $$p;\
+	done \
+  	| sort | (echo 'file $(SEP) preprocess $(SEP) preprocesstime $(SEP) abs $(SEP) abstime $(SEP) solver $(SEP) result $(SEP) solvetime' && cat) | tr '$(SEP)' ';' | tr -d ' ' > $@
 	@cat $@ | column -t -s ';'
 	@echo ' '
 	@echo ' '
+	@rm $(BUILD_FOLDER)/lists_of_targets.txt
 	
 $(RESULT_FOLDER)/analysis.csv: $(RESULT_FOLDER)/res.csv src/analysis.sql
 	@cat src/analysis.sql | sed -E "s;!resfile!;$(RESULT_FOLDER)/res.csv;" |  sqlite3 > $@
