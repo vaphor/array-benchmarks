@@ -16,8 +16,8 @@ RUN apt install grip -y
 RUN opam init --disable-sandboxing
 RUN opam install hmap -y
 RUN opam install ocamlbuild -y
-RUN touch .bashrc
-RUN echo "eval \`opam config env\`" >> .bashrc
+RUN touch .profile
+RUN echo "eval \`opam config env\`" >> .profile
 RUN git config --global advice.detachedHead false
 RUN mkdir Tools
 # Invalidate the cache

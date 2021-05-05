@@ -19,7 +19,10 @@ The verification of assertions in programs with arrays is done in three steps:
 A public docker image is available on DockerHub [data_abstraction_benchmarks](https://hub.docker.com/r/jbraine/data_abstraction_benchmarks). To use the docker image, 
 - Pull the docker image from DockerHub using : `docker pull jbraine/data_abstraction_benchmarks`
 - Run the docker image interactively using : `docker run --name="array-benchmarks" -it jbraine/data_abstraction_benchmarks /bin/bash`
+- Source the *.profile* file within the container : `source .profile`
 - Go to the array benchmarks folder within the container : `cd Tools/array-benchmarks`
+
+__Note : please source .profile as it adds opam configuration to your terminal. Tools can not be rebuild without it.__
 
 ### Using *install.sh* 
 
