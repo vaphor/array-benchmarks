@@ -1,4 +1,4 @@
-###please involke me using make -j4 | nl -b p"Creating.*res"
+###please invoke me using make -j4 | nl -b p"Creating.*res"
 
 #######################Basic Configuration####################################
 
@@ -85,7 +85,7 @@ JAVATOSMT2HINTED1_EXP?=.java
 JAVATOSMT2HINTED1_EXT?=$(JAVATOSMT2_TL)cvjava_hinted_pn1
 
 JAVATOSMT2HINTED2_TOOL?=$(CONVERTERTOOL) -hints -pn 2
-JAVATOSMT2HINTED2_TL?=10s
+JAVATOSMT2HINTED2_TL?=$(PREPROCESSOR_TL)
 JAVATOSMT2HINTED2_EXP?=.java
 JAVATOSMT2HINTED2_EXT?=$(JAVATOSMT2_TL)cvjava_hinted_pn2
 
@@ -93,6 +93,9 @@ CPSMT2_TOOL?=cat
 CPSMT2_TL?=$(PREPROCESSOR_TL)
 CPSMT2_EXP?=.smt2
 CPSMT2_EXT?=cp
+
+noop=
+space=$(noop) $(noop)
 
 #Rules to make the files from the preprocessors. We define two variables :
 # -EXAMPLES : contains all files dealt by at least one preprocessor
@@ -115,6 +118,8 @@ $(1)_TOOLPATHOK=$$(shell type $$($(1)_TOOLEXEC) >/dev/null && echo "ok")
 ifdef COMPUTE
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
 USEDPEPROCESS+=$(1)
+USEDTOOLS+=$$(word 1,$$($(1)_TOOL))
+PREPROCESSDESC+="NAME=$(1)!COMMANDLINE=$$(subst $$(space),?,$$($(1)_TOOL))!TIMELIMIT=$$($(1)_TL)!INPUTFILTER=$$($(1)_EXP)"
 $(1)_EXAMPLES=$$(shell echo $(BENCHMARKS) | tr ' ' '\n' | grep "$$($(1)_EXP)" | grep -v " " | grep -v "$(SEP)" | tr '\n' ' ')
 EXAMPLES+=$$($(1)_EXAMPLES)
 SMT2EXAMPLES+=$$(subst $$($(1)_EXP),$(SEP)$$($(1)_EXT).smt2,$$(subst $(EXAMPLES_FOLDER)/,$(BUILD_FOLDER)/SMT2/,$$($(1)_EXAMPLES))) 
@@ -214,6 +219,8 @@ $(1)_TOOLPATHOK=$$(shell type $$($(1)_TOOLEXEC) >/dev/null && echo "ok")
 ifdef COMPUTE
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
 USEDABS+=$(1)
+USEDTOOLS+=$$(word 1,$$($(1)_TOOL))
+ABSTRACTIONDESC+="NAME=$(1)!COMMANDLINE=$$(subst $$(space),?,$$($(1)_TOOL))!TIMELIMIT=$$($(1)_TL)"
 ABSEXAMPLES+=$$(subst .smt2,$(SEP)$$($(1)_EXT).smt2,$$(subst /SMT2/,/ABSSMT2/,$$(SMT2EXAMPLES))) 
 else
 $$(info abstraction tool for $(1) has $(red)not been found$(reset). Continuing without generating the corresponding targets.)
@@ -276,6 +283,8 @@ $(1)_TOOLPATHOK=$$(shell type $$($(1)_TOOLEXEC) >/dev/null && echo "ok")
 ifdef COMPUTE
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
 USEDSOLVERS+=$(1)
+USEDTOOLS+=$$(word 1,$$($(1)_TOOL))
+SOLVERDESC+="NAME=$(1)!COMMANDLINE=$$(subst $$(space),?,$$($(1)_TOOL))!TIMELIMIT=$$($(1)_TL)"
 RESULTS+=$$(subst .smt2,$(SEP)$$($(1)_EXT).res,$$(subst /ABSSMT2/,/Results/,$$(ABSEXAMPLES))) 
 else
 $$(info solver tool for $(1) has $(red)not been found$(reset). Continuing without generating the corresponding targets.)
@@ -359,13 +368,24 @@ $(RESULT_FOLDER)/time.pdf: $(RESULT_FOLDER)/time.dat
 	 plot for [c in \"$$reslist\"] for [a in \"$$abslist\"] sprintf(\"<cat $(RESULT_FOLDER)/time.dat | grep ' %s ' | grep ' %s '; echo '00:40 %s %s 0';  echo '00:00 %s %s 0'\", c, a, c, a, c, a) \
 	 using 1:4 smooth cnormal dt inctype(c)  title sprintf(\"%s %s\", c, a)"\
 	| gnuplot
-	
-# | awk '{i=i+\$$3; print "00:10 toto 100"}'
-#  	,\"<cat $(RESULT_FOLDER)/time.dat | awk '{i=i+\$$4; printf \\\"%s %s %s \\\", \$$1, \$$2, \$$3; print i}' \" using 1:4 with lines title \"total\" " \
-,\
-	 for [c in \"$$reslist\"] for [a in \"$$otherabslist\"] sprintf(\"<cat $(RESULT_FOLDER)/time.dat | grep ' %s ' | grep ' %s '; echo '00:40 %s %s 0';  echo '00:00 %s %s 0'\", c, a, c, a, c, a) \
-	 using 1:4 smooth cnormal  dt linetyp title sprintf(\"%s %s\", c, a)"\
-all:$(RESULT_FOLDER)/analysis.csv
+
+all:$(RESULT_FOLDER)/time.dat $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/res.csv
+
+save_results:
+	@now=$$(date | tr ' ' '_' | tr ':' '.');dir=Result_$$now;mkdir $$dir;\
+	((echo "Configuration is :";\
+	  echo "  Preprocess step :"; (echo $(PREPROCESSDESC) | tr ' ' '\n' | tr '?' ' ' | column -t -s '!' | sed 's/^/    /');\
+	  echo "  Abstraction step :"; (echo $(ABSTRACTIONDESC) | tr ' ' '\n' | tr '?' ' ' | column -t -s '!' | sed 's/^/    /');\
+	  echo "  Solver step :"; (echo $(SOLVERDESC) | tr ' ' '\n' | tr '?' ' ' | column -t -s '!' | sed 's/^/    /');\
+	  echo " "; echo "Tool versions : ";\
+	  usedtools=$$(echo $(USEDTOOLS) | tr ' ' '\n' | grep -v 'src/cpo' | sort | uniq | tr ' ' '\n'); \
+	  for tool in $$usedtools; do \
+	    version=$$($$tool --version 2> /dev/null || (echo -n "From commit hash : " && cd $$(dirname $$tool) && git rev-parse HEAD));\
+	    short=$$(echo $$version | head -n 1);\
+	    echo "    Tool=$$tool $$short";\
+	  done;\
+	) > $$dir/configuration.txt); cp Makefile "$$dir/used_makefile"; make all "RESULT_FOLDER=$$dir"
+
 
 readme: 
 	grip -b README.md
@@ -379,7 +399,7 @@ dockerpush: Dockerfile
 data_abstraction_benchmarks.tar: Dockerfile
 	docker save data_abstraction_benchmarks > $@
 
-.PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat
+.PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat save_results
 # .SECONDARY:$(RESULT_FOLDER)/res.csv 
 
 #######################CLEANING###########################################
