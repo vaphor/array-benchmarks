@@ -1,15 +1,31 @@
-
+###please involke me using make -j4 | nl -b p"Creating.*res"
 
 #######################Basic Configuration####################################
+
 ifeq ($(MAKECMDGOALS),)
-$(info Printing configuration information)
+ifndef IGNORE
+# $(info Printing configuration information)
 PRINT=yes
+endif
+COMPUTE=yes
 endif
 
 ifneq ($(findstring .csv,$(MAKECMDGOALS)),)
-$(info Printing configuration information)
+ifndef IGNORE
+# $(info Printing configuration information)
 PRINT=yes
 endif
+COMPUTE=yes
+endif
+
+ifdef PRINT
+NUMBERTOBUILD=$(shell make $(MAKECMDGOALS) --dry-run IGNORE=true | grep "Creating" | grep "res" |  wc -l)
+red:=$(shell tput bold; tput setaf 1)
+green:=$(shell tput bold; tput setaf 2)
+reset:=$(shell tput sgr0)
+endif
+
+COMPUTE=yes
 
 PATH_MAIN_FOLDER?=..
 EXAMPLES_FOLDER?=Examples
@@ -96,14 +112,14 @@ $(BUILD_FOLDER)/SMT2/%$(SEP)$$($(1)_EXT).smt2: $(EXAMPLES_FOLDER)/%$$($(1)_EXP)
  	  fi
 $(1)_TOOLEXEC=$$(shell echo "$$($(1)_TOOL)" | cut -f 1 -d " ")
 $(1)_TOOLPATHOK=$$(shell type $$($(1)_TOOLEXEC) >/dev/null && echo "ok")
-ifdef PRINT
+ifdef COMPUTE
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
-$$(info preprocess tool for $(1) found)
+USEDPEPROCESS+=$(1)
 $(1)_EXAMPLES=$$(shell echo $(BENCHMARKS) | tr ' ' '\n' | grep "$$($(1)_EXP)" | grep -v " " | grep -v "$(SEP)" | tr '\n' ' ')
 EXAMPLES+=$$($(1)_EXAMPLES)
 SMT2EXAMPLES+=$$(subst $$($(1)_EXP),$(SEP)$$($(1)_EXT).smt2,$$(subst $(EXAMPLES_FOLDER)/,$(BUILD_FOLDER)/SMT2/,$$($(1)_EXAMPLES))) 
 else
-$$(info preprocess tool for $(1) has not been found. Continuing without generating the corresponding targets.)
+$$(info preprocess tool for $(1) has $(red)not been found$(reset). Continuing without generating the corresponding targets.)
 endif
 endif
 endef
@@ -128,7 +144,7 @@ $(foreach preprocess,$(PREPROCESSORS),$(eval $(call mk_preprocess_rule,$(preproc
 #  -The new data abstraction tool
 #  -The new data abstraction tool with ackermanisation
 
-ABSTOOLS+=ABSNONE VAPHOR VAPHORC2 DATAABS DATAABSACKER DATAABSC2 DATAABSACKERC2
+ABSTOOLS+=ABSNONE DATAABS DATAABSACKER DATAABSCURR DATAABSCURRACKER DATAABSC2 DATAABSACKERC2
 ABSTOOL_TL?=1000s
 
 
@@ -152,6 +168,18 @@ DATAABS_EXT?=dataabs_basic_cell1
 DATAABSACKER_TOOL?=$(DATAABSTOOL) -acker
 DATAABSACKER_TL?=$(ABSTOOL_TL)
 DATAABSACKER_EXT?=dataabs_acker_cell1
+
+
+DATAABSCURR_TOOL?=$(DATAABSTOOL) -abstraction "CurCell1"
+DATAABSCURR_TL?=$(ABSTOOL_TL)
+DATAABSCURR_EXT?=dataabs_curr_basic_cell1
+
+DATAABSCURRACKER_TOOL?=$(DATAABSTOOL) -acker -abstraction "CurCell1"
+DATAABSCURRACKER_TL?=$(ABSTOOL_TL)
+DATAABSCURRACKER_EXT?=dataabs_curr_acker_cell1
+
+
+
 
 DATAABSC2_TOOL?=$(DATAABSTOOL) -abstraction Cell2
 DATAABSC2_TL?=$(ABSTOOL_TL)
@@ -183,12 +211,12 @@ $(BUILD_FOLDER)/ABSSMT2/%$(SEP)$$($(1)_EXT).smt2: $(BUILD_FOLDER)/SMT2/%.smt2
  	  fi
 $(1)_TOOLEXEC=$$(shell echo "$$($(1)_TOOL)" | cut -f 1 -d " ")
 $(1)_TOOLPATHOK=$$(shell type $$($(1)_TOOLEXEC) >/dev/null && echo "ok")
-ifdef PRINT
+ifdef COMPUTE
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
-$$(info abstraction tool for $(1) found)
+USEDABS+=$(1)
 ABSEXAMPLES+=$$(subst .smt2,$(SEP)$$($(1)_EXT).smt2,$$(subst /SMT2/,/ABSSMT2/,$$(SMT2EXAMPLES))) 
 else
-$$(info abstraction tool for $(1) has not been found. Continuing without generating the corresponding targets.)
+$$(info abstraction tool for $(1) has $(red)not been found$(reset). Continuing without generating the corresponding targets.)
 endif
 endif
 endef
@@ -245,12 +273,12 @@ $(BUILD_FOLDER)/Results/%$(SEP)$$($(1)_EXT).res: $(BUILD_FOLDER)/ABSSMT2/%.smt2
 	@echo ' ' >> $$@
 $(1)_TOOLEXEC=$$(shell echo "$$($(1)_TOOL)" | cut -f 1 -d " ")
 $(1)_TOOLPATHOK=$$(shell type $$($(1)_TOOLEXEC) >/dev/null && echo "ok")
-ifdef PRINT
+ifdef COMPUTE
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
-$$(info solver tool for $(1) found)
+USEDSOLVERS+=$(1)
 RESULTS+=$$(subst .smt2,$(SEP)$$($(1)_EXT).res,$$(subst /ABSSMT2/,/Results/,$$(ABSEXAMPLES))) 
 else
-$$(info solver tool for $(1) has not been found. Continuing without generating the corresponding targets.)
+$$(info solver tool for $(1) has $(red)not been found$(reset). Continuing without generating the corresponding targets.)
 endif
 endif
 endef
@@ -261,22 +289,30 @@ $(foreach solver,$(SOLVERS),$(eval $(call mk_solver_rule,$(solver))))
 
 #######################PRINTING INFORMATION###########################################
 
+NUM_EXP=$(words $(BENCHMARKS))
 NUM_SMT2=$(words $(SMT2EXAMPLES))
 NUM_ABS=$(words $(ABSEXAMPLES))
 NUM_RES=$(words $(RESULTS))
 ifdef PRINT
 $(info Current configuration has :)
-$(info A total of  $(NUM_SMT2) inital smt2 files)
-$(info A total of  $(NUM_ABS)  of smt2 files after abstractions)
-$(info A total of  $(NUM_RES) results expected)
+$(info A total of  $(red)$(NUM_EXP)$(reset) inital examples.)
+$(info A total of  $(red)$(NUM_SMT2)$(reset) inital smt2 files using $(red)$(words $(USEDPEPROCESS))$(reset) preprocessors.)
+$(info A total of  $(red)$(NUM_ABS)$(reset)  of smt2 files after abstractions using $(red)$(words $(USEDABS))$(reset) abstractions.)
+$(info A total of  $(red)$(NUM_RES)$(reset) results expected using $(red)$(words $(USEDSOLVERS))$(reset) solvers.)
+$(info A total of  $(green)$(NUMBERTOBUILD)$(reset) results still need building.)
 endif
 
 #######################GATHERING RESULTS###########################################
 
 .DEFAULT_GOAL := $(RESULT_FOLDER)/analysis.csv
 
+smt2:$(SMT2EXAMPLES)
+abstracted:$(ABSEXAMPLES)
+results:$(RESULTS)
+
 #We gather the results in a csv file...
 $(RESULT_FOLDER)/res.csv: $(RESULTS)
+	@echo "Gathering Results..."
 	@mkdir -p $$(dirname $@)
 	@$(file >$(BUILD_FOLDER)/lists_of_targets.txt) $(foreach V,$(RESULTS),$(file >>$(BUILD_FOLDER)/lists_of_targets.txt,$V))
 	@add_res()\
@@ -303,14 +339,33 @@ $(RESULT_FOLDER)/res.csv: $(RESULTS)
 	@echo ' '
 	@rm $(BUILD_FOLDER)/lists_of_targets.txt
 	
-$(RESULT_FOLDER)/analysis.csv: $(RESULT_FOLDER)/res.csv src/analysis.sql
+$(RESULT_FOLDER)/analysis.csv: results $(RESULT_FOLDER)/res.csv src/analysis.sql
 	@cat src/analysis.sql | sed -E "s;!resfile!;$(RESULT_FOLDER)/res.csv;" |  sqlite3 > $@
+	@cat $@ | column -t -s ';'
+	@echo ' '
+	@echo ' '
 	
+$(RESULT_FOLDER)/time.dat: $(RESULT_FOLDER)/res.csv
+	@cat $(RESULT_FOLDER)/res.csv | tail -n +2 | sed -E 's:.*;.*;.*;(.*);.*;.*;(.*);(.*):\3 \2 \1 1:' | sort -b -n > $@
 	
+$(RESULT_FOLDER)/time.pdf: $(RESULT_FOLDER)/time.dat
+	@reslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$2}' | sort | uniq | grep -v 'timeout' | tr '\n' ' ');\
+	 abslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$3}' | sort | uniq | tr '\n' ' ');\
+	 c1abslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$3}' | sort | uniq | grep 'cell1' | tr '\n' ' ');\
+	 otherabslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$3}' | sort | uniq | grep -v 'cell1' | tr '\n' ' ');\
+	 echo "c1abslist=$$c1abslist";\
+	 echo "linetyp=0;last=\"niothing\";inctype(str)=str eq last ? linetyp : (linetyp=linetyp+1, last=str, linetyp);set term pdf; set output \"$@\"; set title \"Solving time distribution\"; set xdata time; set timefmt \"%M:%S\"; \
+	 set key below;set key noenhanced;set key horizontal; set key font \",6\"; set border behind; set xlabel \"Time(s)\"; set ylabel \"% problems finished\"; \
+	 plot for [c in \"$$reslist\"] for [a in \"$$abslist\"] sprintf(\"<cat $(RESULT_FOLDER)/time.dat | grep ' %s ' | grep ' %s '; echo '00:40 %s %s 0';  echo '00:00 %s %s 0'\", c, a, c, a, c, a) \
+	 using 1:4 smooth cnormal dt inctype(c)  title sprintf(\"%s %s\", c, a)"\
+	| gnuplot
+	
+# | awk '{i=i+\$$3; print "00:10 toto 100"}'
+#  	,\"<cat $(RESULT_FOLDER)/time.dat | awk '{i=i+\$$4; printf \\\"%s %s %s \\\", \$$1, \$$2, \$$3; print i}' \" using 1:4 with lines title \"total\" " \
+,\
+	 for [c in \"$$reslist\"] for [a in \"$$otherabslist\"] sprintf(\"<cat $(RESULT_FOLDER)/time.dat | grep ' %s ' | grep ' %s '; echo '00:40 %s %s 0';  echo '00:00 %s %s 0'\", c, a, c, a, c, a) \
+	 using 1:4 smooth cnormal  dt linetyp title sprintf(\"%s %s\", c, a)"\
 all:$(RESULT_FOLDER)/analysis.csv
-smt2:$(SMT2EXAMPLES)
-abstracted:$(ABSEXAMPLES)
-results:$(RESULTS)
 
 readme: 
 	grip -b README.md
@@ -324,8 +379,8 @@ dockerpush: Dockerfile
 data_abstraction_benchmarks.tar: Dockerfile
 	docker save data_abstraction_benchmarks > $@
 
-.phony: all smt2 abstracted results readme dockerimg dockerpush
-.SECONDARY:$(RESULT_FOLDER)/res.csv 
+.PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat
+# .SECONDARY:$(RESULT_FOLDER)/res.csv 
 
 #######################CLEANING###########################################
 clean:

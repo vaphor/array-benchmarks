@@ -15,13 +15,7 @@ SELECT file, (CASE
                  ELSE 'problem'
                  END) as ftype,
              (SUBSTR(preprocess, -1)) as nameopt, 
-             (CASE 
-                 WHEN abs like '%vaphor%' THEN 'vaphor'
-                 WHEN abs like '%dataabs_basic%' THEN 'dataabs_noacker'
-                 WHEN abs like '%dataabs_acker%' THEN 'dataabs_acker'
-                 WHEN abs like '%noabs%' THEN 'noabs'
-              END
-             ) as abstool,
+             abs as abstool,
              (CASE 
               WHEN abs like '%cell1%' THEN 1
               WHEN abs like '%cell2%' THEN 2 
