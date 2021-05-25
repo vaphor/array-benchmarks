@@ -1,5 +1,6 @@
 ###please invoke me using make -j4 | nl -b p"Creating.*res"
 
+
 #######################Basic Configuration####################################
 
 PATH_MAIN_FOLDER?=..
@@ -21,17 +22,12 @@ ELDARICATOOL?=eld
 
 #######Preprocessors#########
 ALLPREPROCESSORS=CPSMT2 JAVATOSMT2 JAVATOSMT2_1 JAVATOSMT2_2 JAVATOSMT2HINTED JAVATOSMT2HINTED1 JAVATOSMT2HINTED2 
-PREPROCESSOR_TL?=600s
-PREPROCESSORS?=$(ALLPREPROCESSORS)
 
 #######Abstractions##########
 OLDABS=ABSNONE VAPHOR VAPHORC2
 C1ABS=DATAABS_C1 DATAABS_C1_ACKER DATAABS_C1_CURR DATAABS_C1_CURR_ACKER DATAABS_C1_SAME DATAABS_C1_SAME_ACKER DATAABS_C1_REVSAME DATAABS_C1_REVSAME_ACKER 
 C2ABS=$(shell echo $(C1ABS) | sed 's;C1;C2;g')
 ALLABSTOOLS=$(OLDABS) $(C1ABS) $(C2ABS)
-
-ABSTOOLS?=$(shell echo $(ALLABSTOOLS) | sed 's;[^ ]*C2[^ ]*;;g')
-ABSTOOL_TL?=1000s
 
 #######Solvers##########
 define mk_z3_solver_list
@@ -41,9 +37,55 @@ ITERATE=0 1 2
 $(foreach satrd,$(ITERATE),$(foreach slsrd,$(ITERATE),$(foreach spacerrd,$(ITERATE),$(eval $(call mk_z3_solver_list,$(satrd),$(slsrd),$(spacerrd))))))
 ALLSOLVERS=$(ALLZ3SOLVERS)
 
-Z3_SOLVER_TL?=40s
-SOLVERS?=$(wordlist 1,9,$(ALLZ3SOLVERS))
-
+######Configurations#########
+ifeq ($(BUILDTYPE),quick)
+  PREPROCESSOR_TL?=600s
+  PREPROCESSORS?=$(ALLPREPROCESSORS)
+  ABSTOOLS?=$(ALLABSTOOLS)
+  ABSTOOL_TL?=1000s
+  Z3_SOLVER_TL?=5s
+  SOLVERS?=$(wordlist 1,1,$(ALLZ3SOLVERS))
+endif
+ifeq ($(BUILDTYPE),test)
+  PREPROCESSOR_TL?=600s
+  PREPROCESSORS?=$(ALLPREPROCESSORS)
+  ABSTOOLS?=$(ALLABSTOOLS)
+  ABSTOOL_TL?=1000s
+  Z3_SOLVER_TL?=1s
+  SOLVERS?=$(wordlist 1,1,$(ALLZ3SOLVERS))
+endif
+ifeq ($(BUILDTYPE),medium)
+  PREPROCESSOR_TL?=600s
+  PREPROCESSORS?=$(ALLPREPROCESSORS)
+  ABSTOOLS?=$(ALLABSTOOLS)
+  ABSTOOL_TL?=1000s
+  Z3_SOLVER_TL?=5s
+  SOLVERS?=$(wordlist 1,2,$(ALLZ3SOLVERS))
+endif
+ifeq ($(BUILDTYPE),slow)
+  PREPROCESSOR_TL?=600s
+  PREPROCESSORS?=$(ALLPREPROCESSORS)
+  ABSTOOLS?=$(ALLABSTOOLS)
+  ABSTOOL_TL?=1000s
+  Z3_SOLVER_TL?=20s
+  SOLVERS?=$(wordlist 1,2,$(ALLZ3SOLVERS))
+endif
+ifeq ($(BUILDTYPE),full)
+  PREPROCESSOR_TL?=600s
+  PREPROCESSORS?=$(ALLPREPROCESSORS)
+  ABSTOOLS?=$(ALLABSTOOLS)
+  ABSTOOL_TL?=1000s
+  Z3_SOLVER_TL?=60s
+  SOLVERS?=$(ALLSOLVERS)
+endif
+ifeq ($(BUILDTYPE),)
+  PREPROCESSOR_TL?=600s
+  PREPROCESSORS?=$(ALLPREPROCESSORS)
+  ABSTOOLS?=$(shell echo $(ALLABSTOOLS) | sed 's;[^ ]*C2[^ ]*;;g')
+  ABSTOOL_TL?=1000s
+  Z3_SOLVER_TL?=40s
+  SOLVERS?=$(wordlist 1,9,$(ALLZ3SOLVERS))
+endif
 
 #######################OtherStuff####################################
 
@@ -62,7 +104,7 @@ COMPUTE=yes
 endif
 
 ifdef PRINT
-NUMBERTOBUILD=$(shell make $(MAKECMDGOALS) --dry-run IGNORE=true | grep "Creating" | grep "res" |  wc -l)
+NUMBERTOBUILD=$(shell make $(MAKECMDGOALS) --dry-run  BUILDTYPE=$(BUILDTYPE) IGNORE=true  | grep "Creating" | grep "res" |  wc -l)
 red:=$(shell tput bold; tput setaf 1)
 green:=$(shell tput bold; tput setaf 2)
 reset:=$(shell tput sgr0)
