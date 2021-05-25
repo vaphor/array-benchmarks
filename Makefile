@@ -2,9 +2,53 @@
 
 #######################Basic Configuration####################################
 
+PATH_MAIN_FOLDER?=..
+EXAMPLES_FOLDER?=Examples
+BUILD_FOLDER?=Build
+RESULT_FOLDER?=Result
+#Separator to use. Careful, it must not be used within your filenames, nor interfere with make, bash, sed, ...  This is a problem at the moment
+SEP?=-
+BENCHMARKS?=$(shell find $(EXAMPLES_FOLDER) -type f)
+
+#######################Configuration####################################
+
+#######Tool paths#########
+CONVERTERTOOL?=$(PATH_MAIN_FOLDER)/hornconverter/converter
+DATAABSTOOL?=$(PATH_MAIN_FOLDER)/DataAbstraction/dataabs
+VAPHORTOOL?=$(PATH_MAIN_FOLDER)/CellMorphing/vaphor
+Z3TOOL?=z3
+ELDARICATOOL?=eld
+
+#######Preprocessors#########
+ALLPREPROCESSORS=CPSMT2 JAVATOSMT2 JAVATOSMT2_1 JAVATOSMT2_2 JAVATOSMT2HINTED JAVATOSMT2HINTED1 JAVATOSMT2HINTED2 
+PREPROCESSOR_TL?=600s
+PREPROCESSORS?=$(ALLPREPROCESSORS)
+
+#######Abstractions##########
+OLDABS=ABSNONE VAPHOR VAPHORC2
+C1ABS=DATAABS_C1 DATAABS_C1_ACKER DATAABS_C1_CURR DATAABS_C1_CURR_ACKER DATAABS_C1_SAME DATAABS_C1_SAME_ACKER DATAABS_C1_REVSAME DATAABS_C1_REVSAME_ACKER 
+C2ABS=$(shell echo $(C1ABS) | sed 's;C1;C2;g')
+ALLABSTOOLS=$(OLDABS) $(C1ABS) $(C2ABS)
+
+ABSTOOLS?=$(shell echo $(ALLABSTOOLS) | sed 's;[^ ]*C2[^ ]*;;g')
+ABSTOOL_TL?=1000s
+
+#######Solvers##########
+define mk_z3_solver_list
+ALLZ3SOLVERS+=Z3_SATRD$(1)_SLSRD$(2)_SPACERRD$(3)
+endef
+ITERATE=0 1 2
+$(foreach satrd,$(ITERATE),$(foreach slsrd,$(ITERATE),$(foreach spacerrd,$(ITERATE),$(eval $(call mk_z3_solver_list,$(satrd),$(slsrd),$(spacerrd))))))
+ALLSOLVERS=$(ALLZ3SOLVERS)
+
+Z3_SOLVER_TL?=40s
+SOLVERS?=$(wordlist 1,9,$(ALLZ3SOLVERS))
+
+
+#######################OtherStuff####################################
+
 ifeq ($(MAKECMDGOALS),)
 ifndef IGNORE
-# $(info Printing configuration information)
 PRINT=yes
 endif
 COMPUTE=yes
@@ -12,7 +56,6 @@ endif
 
 ifneq ($(findstring .csv,$(MAKECMDGOALS)),)
 ifndef IGNORE
-# $(info Printing configuration information)
 PRINT=yes
 endif
 COMPUTE=yes
@@ -27,21 +70,8 @@ endif
 
 COMPUTE=yes
 
-PATH_MAIN_FOLDER?=..
-EXAMPLES_FOLDER?=Examples
-BUILD_FOLDER?=Build
-RESULT_FOLDER?=Result
-#Separator to use. Careful, it must not be used within your filenames, nor interfere with make, bash, sed, ...  This is a problem at the moment
-SEP?=-
-BENCHMARKS?=$(shell find $(EXAMPLES_FOLDER) -type f)
-
-#######################Executable Configuration####################################
-
-CONVERTERTOOL?=$(PATH_MAIN_FOLDER)/hornconverter/converter
-DATAABSTOOL?=$(PATH_MAIN_FOLDER)/DataAbstraction/dataabs
-VAPHORTOOL?=$(PATH_MAIN_FOLDER)/CellMorphing/vaphor
-Z3TOOL?=z3
-ELDARICATOOL?=eld
+noop=
+space=$(noop) $(noop)
 
 #######################SMT2FromExamples#######################################
 
@@ -55,8 +85,6 @@ ELDARICATOOL?=eld
 #  -The extention used in filenames to distinguish that preprocessor
 
 #We define several preprocessors : one to handle smt2 to files by just copying them, the others using our converter
-PREPROCESSORS+=JAVATOSMT2 JAVATOSMT2_1 JAVATOSMT2_2 JAVATOSMT2HINTED JAVATOSMT2HINTED1 JAVATOSMT2HINTED2 
-PREPROCESSOR_TL?=600s
 
 JAVATOSMT2_TOOL?=$(CONVERTERTOOL)
 JAVATOSMT2_TL?=$(PREPROCESSOR_TL)
@@ -93,9 +121,6 @@ CPSMT2_TOOL?=cat
 CPSMT2_TL?=$(PREPROCESSOR_TL)
 CPSMT2_EXP?=.smt2
 CPSMT2_EXT?=cp
-
-noop=
-space=$(noop) $(noop)
 
 #Rules to make the files from the preprocessors. We define two variables :
 # -EXAMPLES : contains all files dealt by at least one preprocessor
@@ -149,8 +174,7 @@ $(foreach preprocess,$(PREPROCESSORS),$(eval $(call mk_preprocess_rule,$(preproc
 #  -The new data abstraction tool
 #  -The new data abstraction tool with ackermanisation
 
-ABSTOOLS+=ABSNONE DATAABS DATAABSACKER DATAABSCURR DATAABSCURRACKER DATAABSC2 DATAABSACKERC2
-ABSTOOL_TL?=1000s
+
 
 
 ABSNONE_TOOL?=src/cpo
@@ -166,33 +190,75 @@ VAPHORC2_TOOL?=$(VAPHORTOOL) -distinct 2
 VAPHORC2_TL?=$(ABSTOOL_TL)
 VAPHORC2_EXT?=vaphor_cell2
 
-DATAABS_TOOL?=$(DATAABSTOOL)
-DATAABS_TL?=$(ABSTOOL_TL)
-DATAABS_EXT?=dataabs_basic_cell1
+DATAABS_C1_TOOL?=$(DATAABSTOOL) -abstraction "Cell1"
+DATAABS_C1_TL?=$(ABSTOOL_TL)
+DATAABS_C1_EXT?=dataabs_basic_cell1
 
-DATAABSACKER_TOOL?=$(DATAABSTOOL) -acker
-DATAABSACKER_TL?=$(ABSTOOL_TL)
-DATAABSACKER_EXT?=dataabs_acker_cell1
-
-
-DATAABSCURR_TOOL?=$(DATAABSTOOL) -abstraction "CurCell1"
-DATAABSCURR_TL?=$(ABSTOOL_TL)
-DATAABSCURR_EXT?=dataabs_curr_basic_cell1
-
-DATAABSCURRACKER_TOOL?=$(DATAABSTOOL) -acker -abstraction "CurCell1"
-DATAABSCURRACKER_TL?=$(ABSTOOL_TL)
-DATAABSCURRACKER_EXT?=dataabs_curr_acker_cell1
+DATAABS_C1_ACKER_TOOL?=$(DATAABSTOOL) -abstraction "Cell1" -acker
+DATAABS_C1_ACKER_TL?=$(ABSTOOL_TL)
+DATAABS_C1_ACKER_EXT?=dataabs_acker_cell1
 
 
+DATAABS_C1_CURR_TOOL?=$(DATAABSTOOL) -abstraction "CurCell1"
+DATAABS_C1_CURR_TL?=$(ABSTOOL_TL)
+DATAABS_C1_CURR_EXT?=dataabs_curr_basic_cell1
 
 
-DATAABSC2_TOOL?=$(DATAABSTOOL) -abstraction Cell2
-DATAABSC2_TL?=$(ABSTOOL_TL)
-DATAABSC2_EXT?=dataabs_basic_cell2
+DATAABS_C1_CURR_ACKER_TOOL?=$(DATAABSTOOL) -acker -abstraction "CurCell1"
+DATAABS_C1_CURR_ACKER_TL?=$(ABSTOOL_TL)
+DATAABS_C1_CURR_ACKER_EXT?=dataabs_curr_acker_cell1
 
-DATAABSACKERC2_TOOL?=$(DATAABSTOOL) -abstraction Cell2 -acker
-DATAABSACKERC2_TL?=$(ABSTOOL_TL)
-DATAABSACKERC2_EXT?=dataabs_acker_cell2
+DATAABS_C1_SAME_TOOL?=$(DATAABSTOOL) -abstraction "SameCell1"
+DATAABS_C1_SAME_TL?=$(ABSTOOL_TL)
+DATAABS_C1_SAME_EXT?=dataabs_same_cell1
+
+DATAABS_C1_SAME_ACKER_TOOL?=$(DATAABSTOOL) -acker -abstraction "SameCell1"
+DATAABS_C1_SAME_ACKER_TL?=$(ABSTOOL_TL)
+DATAABS_C1_SAME_ACKER_EXT?=dataabs_same_acker_cell1
+
+DATAABS_C1_REVSAME_TOOL?=$(DATAABSTOOL) -abstraction "revSameCell1"
+DATAABS_C1_REVSAME_TL?=$(ABSTOOL_TL)
+DATAABS_C1_REVSAME_EXT?=dataabs_revsame_cell1
+
+DATAABS_C1_REVSAME_ACKER_TOOL?=$(DATAABSTOOL) -acker -abstraction "revSameCell1"
+DATAABS_C1_REVSAME_ACKER_TL?=$(ABSTOOL_TL)
+DATAABS_C1_REVSAME_ACKER_EXT?=dataabs_revsame_acker_cell1
+
+
+
+DATAABS_C2_TOOL?=$(DATAABSTOOL) -abstraction "Cell2"
+DATAABS_C2_TL?=$(ABSTOOL_TL)
+DATAABS_C2_EXT?=dataabs_basic_cell2
+
+DATAABS_C2_ACKER_TOOL?=$(DATAABSTOOL) -abstraction "Cell2" -acker
+DATAABS_C2_ACKER_TL?=$(ABSTOOL_TL)
+DATAABS_C2_ACKER_EXT?=dataabs_acker_cell2
+
+
+DATAABS_C2_CURR_TOOL?=$(DATAABSTOOL) -abstraction "CurCell2"
+DATAABS_C2_CURR_TL?=$(ABSTOOL_TL)
+DATAABS_C2_CURR_EXT?=dataabs_curr_basic_cell2
+
+DATAABS_C2_CURR_ACKER_TOOL?=$(DATAABSTOOL) -acker -abstraction "CurCell2"
+DATAABS_C2_CURR_ACKER_TL?=$(ABSTOOL_TL)
+DATAABS_C2_CURR_ACKER_EXT?=dataabs_curr_acker_cell2
+
+DATAABS_C2_SAME_TOOL?=$(DATAABSTOOL) -abstraction "SameCell2"
+DATAABS_C2_SAME_TL?=$(ABSTOOL_TL)
+DATAABS_C2_SAME_EXT?=dataabs_same_cell2
+
+DATAABS_C2_SAME_ACKER_TOOL?=$(DATAABSTOOL) -acker -abstraction "SameCell2"
+DATAABS_C2_SAME_ACKER_TL?=$(ABSTOOL_TL)
+DATAABS_C2_SAME_ACKER_EXT?=dataabs_same_acker_cell2
+
+DATAABS_C2_REVSAME_TOOL?=$(DATAABSTOOL) -abstraction "revSameCell2"
+DATAABS_C2_REVSAME_TL?=$(ABSTOOL_TL)
+DATAABS_C2_REVSAME_EXT?=dataabs_revsame_cell2
+
+DATAABS_C2_REVSAME_ACKER_TOOL?=$(DATAABSTOOL) -acker -abstraction "revSameCell2"
+DATAABS_C2_REVSAME_ACKER_TL?=$(ABSTOOL_TL)
+DATAABS_C2_REVSAME_ACKER_EXT?=dataabs_revsame_acker_cell2
+
 
 
 #Rules to make abstracted smt2. We define the variable ABSEXAMPLES containing #SMT2EXAMPLES * #ABSTOOLS files.
@@ -241,22 +307,16 @@ $(foreach abstool,$(ABSTOOLS),$(eval $(call mk_abs_rule,$(abstool))))
 #  -The extention used in filenames to distinguish that abstraction tool
 
 
-Z3_SOLVER_TL?=40s
-
 define mk_z3_rule
 Z3_SATRD$(1)_SLSRD$(2)_SPACERRD$(3)_TOOL=$(Z3TOOL) sat.random_seed=$(1) sls.random_seed=$(2) fp.spacer.random_seed=$(3)
 Z3_SATRD$(1)_SLSRD$(2)_SPACERRD$(3)_TL=$(Z3_SOLVER_TL)
 Z3_SATRD$(1)_SLSRD$(2)_SPACERRD$(3)_EXT=z3_satrd$(1)_slsrd_$(2)_spacerrd$(3)_$(Z3_SOLVER_TL)
-Z3_SOLVERS+=Z3_SATRD$(1)_SLSRD$(2)_SPACERRD$(3)
 endef
 
-SATRD?=0
-SLSRD?=0
-SPACERRD?=0 1
+SATRD?=0 1 2
+SLSRD?=0 1 2
+SPACERRD?=0 1 2
 $(foreach satrd,$(SATRD),$(foreach slsrd,$(SLSRD),$(foreach spacerrd,$(SPACERRD),$(eval $(call mk_z3_rule,$(satrd),$(slsrd),$(spacerrd))))))
-
-
-SOLVERS+=$(Z3_SOLVERS)
 
 #Rules to make the final result. We define the variable RESULTS containing #ABSEXAMPLES * #SOLVERS files.
 #NOTE : we also generate a file .time to keep time info and .error when there is an error
@@ -323,6 +383,7 @@ results:$(RESULTS)
 $(RESULT_FOLDER)/res.csv: $(RESULTS)
 	@echo "Gathering Results..."
 	@mkdir -p $$(dirname $@)
+	@touch $(BUILD_FOLDER)/lists_of_targets.txt
 	@$(file >$(BUILD_FOLDER)/lists_of_targets.txt) $(foreach V,$(RESULTS),$(file >>$(BUILD_FOLDER)/lists_of_targets.txt,$V))
 	@add_res()\
 	{\
@@ -358,7 +419,7 @@ $(RESULT_FOLDER)/time.dat: $(RESULT_FOLDER)/res.csv
 	@cat $(RESULT_FOLDER)/res.csv | tail -n +2 | sed -E 's:.*;.*;.*;(.*);.*;.*;(.*);(.*):\3 \2 \1 1:' | sort -b -n > $@
 	
 $(RESULT_FOLDER)/time.pdf: $(RESULT_FOLDER)/time.dat
-	@reslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$2}' | sort | uniq | grep -v 'timeout' | tr '\n' ' ');\
+	@reslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$2}' | sort | uniq | grep -v 'timeout' | grep -v 'error' | tr '\n' ' ');\
 	 abslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$3}' | sort | uniq | tr '\n' ' ');\
 	 c1abslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$3}' | sort | uniq | grep 'cell1' | tr '\n' ' ');\
 	 otherabslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$3}' | sort | uniq | grep -v 'cell1' | tr '\n' ' ');\
