@@ -13,6 +13,9 @@ RUN apt install tmux -y
 RUN apt install sqlite3 -y
 RUN apt install bsdmainutils -y
 RUN apt install grip -y
+RUN apt-get update
+RUN DEBIAN_FRONTEND="noninteractive"  apt install tzdata -y
+RUN DEBIAN_FRONTEND="noninteractive" apt install gnuplot -y
 RUN opam init --disable-sandboxing
 RUN opam install hmap -y
 RUN opam install ocamlbuild -y

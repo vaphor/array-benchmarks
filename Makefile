@@ -494,10 +494,10 @@ readme:
 	grip -b README.md
 	
 dockerimg: Dockerfile
-	docker build -t jbraine/data_abstraction_benchmarks .
+	docker build -t jbraine/data_abstraction_benchmarks:latest .
 	
 dockerpush: Dockerfile
-	docker login --username=jbraine && docker push jbraine/data_abstraction_benchmarks
+	docker login --username=jbraine && docker push jbraine/data_abstraction_benchmarks:latest
 	
 data_abstraction_benchmarks.tar: Dockerfile
 	docker save data_abstraction_benchmarks > $@

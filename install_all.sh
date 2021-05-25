@@ -1,4 +1,4 @@
-tag=SAS21
+tag=master
 
 echo "Checking out to $tag commit of array benchmarks"
 git checkout $tag
