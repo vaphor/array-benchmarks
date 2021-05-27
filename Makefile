@@ -434,6 +434,7 @@ abstracted:$(ABSEXAMPLES)
 results:$(RESULTS)
 
 LISTFILE=$(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt
+$(shell mkdir $(BUILD_FOLDER))
 $(file > $(LISTFILE)) 
 $(foreach V,$(RESULTS),$(file >> $(LISTFILE),$V))
 
