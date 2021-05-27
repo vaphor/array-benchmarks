@@ -473,16 +473,18 @@ $(RESULT_FOLDER)/time.pdf: $(RESULT_FOLDER)/time.dat
 	 using 1:4 smooth cnormal dt inctype(c)  title sprintf(\"%s %s\", c, a)"\
 	| gnuplot
 
-errors:$(RESULT_FOLDER)/res.csv
+errors:$(RESULT_FOLDER)/res.csv $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf
 	@rm -rf $(RESULT_FOLDER)/error_files
 	@mkdir -p $(RESULT_FOLDER)/error_files
 	@compute_error()\
 	{\
-	  postfixfile=$$(echo $$1 | sed -E 's:(.*);(.*);.*;(.*);.*;(.*);.*;.*:\1$(SEP)\2$(SEP)\3.smt2:');\
-	  ext_solver=$$(echo $$1 | sed -E 's:(.*);(.*);.*;(.*);.*;(.*);.*;.*:\4:');\
+	  postfixfile=$$(echo $$1 | sed -E 's:(.*);(.*);.*;(.*);.*;(.*);.*;.*:\1$(SEP)\2$(SEP)\3:'| tr -d ' ');\
+	  smt2file=$$(echo "$(BUILD_FOLDER)/ABSSMT2/$$postfixfile.smt2");\
+	  ext_solver=$$(echo $$1 | sed -E 's:(.*);(.*);.*;(.*);.*;(.*);.*;.*:\4:' | tr -d ' ');\
 	  solver_command=$$(echo $(SOLVERDESC) | tr ' ' '\n' | grep EXT=$$ext_solver| sed -E 's;.*!COMMANDLINE=([^!]*)!.*;\1;' | tr '?' ' '); \
-	  echo "$(red)error$(reset) command $(yellow)$$solver_command $(BUILD_FOLDER)/ABSSMT2/$$postfixfile$(reset) failed"; \
-	  (echo ';'Solver command used for error is $$solver_command ; cat $(BUILD_FOLDER)/ABSSMT2/$$postfixfile) > $(RESULT_FOLDER)/error_files/$$postfixfile; \
+	  final_file=$$(echo -n "$(RESULT_FOLDER)/error_files/$$postfixfile" ; echo -n "---solver:$$ext_solver.smt2" | tr ' ' '_') ;\
+	  echo "$(red)error$(reset) command $(yellow)$$solver_command $$smt2file$(reset) failed"; \
+	  (echo ';'Solver command used for error is $$solver_command ; cat $$smt2file) > $$final_file ; \
 	};\
 	cat $(RESULT_FOLDER)/res.csv | grep error |\
 	while read p; do \
@@ -521,7 +523,7 @@ dockerpush: Dockerfile
 data_abstraction_benchmarks.tar: Dockerfile
 	docker save data_abstraction_benchmarks:latest > $@
 
-.PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat save_results errors
+.PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/res.csv $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat save_results errors
 # .SECONDARY:$(RESULT_FOLDER)/res.csv 
 
 #######################CLEANING###########################################
