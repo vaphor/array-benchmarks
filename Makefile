@@ -90,7 +90,7 @@ endif
 
 
 #####################Rules independant of other stuff#########################
-
+EASY_TARGETS=readme dockerimg dockerpush data_abstraction_benchmarks.tar clean
 
 readme: 
 	grip -b README.md
@@ -109,20 +109,9 @@ clean:
 	@rm -rf $(BUILD_FOLDER)/ $(RESULT_FOLDER)
 
 
-
-
-
-
-
-
-
-
-
 #######################OtherStuff####################################
 
-
-
-
+ifeq($(findstring $(MAKECMDGOALS),$(EASY_TARGETS)),)
 ifeq ($(MAKECMDGOALS),)
 ifndef IGNORE
 PRINT=yes
@@ -553,7 +542,7 @@ save_results:
 	    echo "    Tool=$$tool $$short";\
 	  done;\
 	) > $$dir/configuration.txt); cp Makefile "$$dir/used_makefile"; make all "RESULT_FOLDER=$$dir" BUILDTYPE=$(BUILDTYPE)
-
+endif
 .PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/res.csv $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat save_results errors
 
 	
