@@ -88,6 +88,36 @@ ifeq ($(BUILDTYPE),full)
   SOLVERS?=$(ALLSOLVERS)
 endif
 
+
+#####################Rules independant of other stuff#########################
+
+
+readme: 
+	grip -b README.md
+	
+dockerimg: Dockerfile
+	docker build -t jbraine/data_abstraction_benchmarks:latest .
+	
+dockerpush: Dockerfile
+	docker login --username=jbraine && docker push jbraine/data_abstraction_benchmarks:latest
+	
+data_abstraction_benchmarks.tar: Dockerfile
+	docker save data_abstraction_benchmarks:latest > $@
+
+clean:
+	@echo "Removing files in $(BUILD_FOLDER) $(RESULT_FOLDER)"
+	@rm -rf $(BUILD_FOLDER)/ $(RESULT_FOLDER)
+
+
+
+
+
+
+
+
+
+
+
 #######################OtherStuff####################################
 
 
@@ -524,24 +554,6 @@ save_results:
 	  done;\
 	) > $$dir/configuration.txt); cp Makefile "$$dir/used_makefile"; make all "RESULT_FOLDER=$$dir" BUILDTYPE=$(BUILDTYPE)
 
-
-readme: 
-	grip -b README.md
-	
-dockerimg: Dockerfile
-	docker build -t jbraine/data_abstraction_benchmarks:latest .
-	
-dockerpush: Dockerfile
-	docker login --username=jbraine && docker push jbraine/data_abstraction_benchmarks:latest
-	
-data_abstraction_benchmarks.tar: Dockerfile
-	docker save data_abstraction_benchmarks:latest > $@
-
 .PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/res.csv $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat save_results errors
-# .SECONDARY:$(RESULT_FOLDER)/res.csv 
 
-#######################CLEANING###########################################
-clean:
-	@echo "Removing files in $(BUILD_FOLDER) $(RESULT_FOLDER)"
-	@rm -rf $(BUILD_FOLDER)/ $(RESULT_FOLDER)
 	
