@@ -1,10 +1,9 @@
 ###please invoke me using make -j4 | nl -b p"Creating.*res"
 
-
 #######################Basic Configuration####################################
 
 PATH_MAIN_FOLDER?=..
-EXAMPLES_FOLDER?=Examples
+EXAMPLES_FOLDER?=Examples/NewExp
 BUILD_FOLDER?=Build
 RESULT_FOLDER?=Result
 #Separator to use. Careful, it must not be used within your filenames, nor interfere with make, bash, sed, ...  This is a problem at the moment
@@ -38,6 +37,16 @@ $(foreach satrd,$(ITERATE),$(foreach slsrd,$(ITERATE),$(foreach spacerrd,$(ITERA
 ALLSOLVERS=$(ALLZ3SOLVERS)
 
 ######Configurations#########
+
+ifeq ($(BUILDTYPE),)
+  PREPROCESSOR_TL?=600s
+  PREPROCESSORS?=$(ALLPREPROCESSORS)
+  ABSTOOLS?=$(shell echo $(ALLABSTOOLS) | tr ' ' '\n' | grep DATAABS | tr '\n' ' ')
+  ABSTOOL_TL?=1000s
+  Z3_SOLVER_TL?=5s
+  SOLVERS?=$(wordlist 1,1,$(ALLZ3SOLVERS))
+endif
+
 ifeq ($(BUILDTYPE),quick)
   PREPROCESSOR_TL?=600s
   PREPROCESSORS?=$(ALLPREPROCESSORS)
@@ -78,14 +87,6 @@ ifeq ($(BUILDTYPE),full)
   Z3_SOLVER_TL?=60s
   SOLVERS?=$(ALLSOLVERS)
 endif
-ifeq ($(BUILDTYPE),)
-  PREPROCESSOR_TL?=600s
-  PREPROCESSORS?=$(ALLPREPROCESSORS)
-  ABSTOOLS?=$(shell echo $(ALLABSTOOLS) | sed 's;[^ ]*C2[^ ]*;;g')
-  ABSTOOL_TL?=1000s
-  Z3_SOLVER_TL?=40s
-  SOLVERS?=$(wordlist 1,9,$(ALLZ3SOLVERS))
-endif
 
 #######################OtherStuff####################################
 
@@ -104,10 +105,11 @@ COMPUTE=yes
 endif
 
 ifdef PRINT
-NUMBERTOBUILD=$(shell make $(MAKECMDGOALS) --dry-run  BUILDTYPE=$(BUILDTYPE) IGNORE=true  | grep "Creating" | grep "res" |  wc -l)
 red:=$(shell tput bold; tput setaf 1)
 green:=$(shell tput bold; tput setaf 2)
 reset:=$(shell tput sgr0)
+$(info To display progress, we suggest you invoke make using $(red)make -j4 PARAMS | nl -b p"Creating.*res$(reset))
+NUMBERTOBUILD=$(shell make $(MAKECMDGOALS) --dry-run  BUILDTYPE=$(BUILDTYPE) EXAMPLES_FOLDER=$(EXAMPLES_FOLDER) IGNORE=true  | grep "Creating" | grep "res" |  wc -l)
 endif
 
 COMPUTE=yes
@@ -415,7 +417,6 @@ endif
 
 #######################GATHERING RESULTS###########################################
 
-.DEFAULT_GOAL := $(RESULT_FOLDER)/analysis.csv
 
 smt2:$(SMT2EXAMPLES)
 abstracted:$(ABSEXAMPLES)
@@ -465,14 +466,20 @@ $(RESULT_FOLDER)/time.pdf: $(RESULT_FOLDER)/time.dat
 	 abslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$3}' | sort | uniq | tr '\n' ' ');\
 	 c1abslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$3}' | sort | uniq | grep 'cell1' | tr '\n' ' ');\
 	 otherabslist=$$(cat $(RESULT_FOLDER)/time.dat | awk '{print $$3}' | sort | uniq | grep -v 'cell1' | tr '\n' ' ');\
-	 echo "c1abslist=$$c1abslist";\
 	 echo "linetyp=0;last=\"niothing\";inctype(str)=str eq last ? linetyp : (linetyp=linetyp+1, last=str, linetyp);set term pdf; set output \"$@\"; set title \"Solving time distribution\"; set xdata time; set timefmt \"%M:%S\"; \
 	 set key below;set key noenhanced;set key horizontal; set key font \",6\"; set border behind; set xlabel \"Time(s)\"; set ylabel \"% problems finished\"; \
 	 plot for [c in \"$$reslist\"] for [a in \"$$abslist\"] sprintf(\"<cat $(RESULT_FOLDER)/time.dat | grep ' %s ' | grep ' %s '; echo '00:40 %s %s 0';  echo '00:00 %s %s 0'\", c, a, c, a, c, a) \
 	 using 1:4 smooth cnormal dt inctype(c)  title sprintf(\"%s %s\", c, a)"\
 	| gnuplot
 
-all:$(RESULT_FOLDER)/time.dat $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/res.csv
+errors:$(RESULT_FOLDER)/res.csv
+	@rm -rf $(RESULT_FOLDER)/error_files
+	@mkdir -p $(RESULT_FOLDER)/error_files
+	@cat $(RESULT_FOLDER)/res.csv | grep error | sed -E 's:(.*);(.*);.*;(.*);.*;(.*);.*;.*:\1$(SEP)\2$(SEP)\3.smt2:' | xargs -I '@' sh -c 'echo $(red)error$(reset) z3 on file $(BUILD_FOLDER)/ABSSMT2/@ failed; cp $(BUILD_FOLDER)/ABSSMT2/@ $(RESULT_FOLDER)/error_files/@'
+
+
+all:$(RESULT_FOLDER)/time.dat $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/res.csv errors
+.DEFAULT_GOAL := all
 
 save_results:
 	@now=$$(date | tr ' ' '_' | tr ':' '.');dir=Result_$$now;mkdir $$dir;\
@@ -487,7 +494,7 @@ save_results:
 	    short=$$(echo $$version | head -n 1);\
 	    echo "    Tool=$$tool $$short";\
 	  done;\
-	) > $$dir/configuration.txt); cp Makefile "$$dir/used_makefile"; make all "RESULT_FOLDER=$$dir"
+	) > $$dir/configuration.txt); cp Makefile "$$dir/used_makefile"; make all "RESULT_FOLDER=$$dir" BUILDTYPE=$(BUILDTYPE)
 
 
 readme: 
@@ -502,7 +509,7 @@ dockerpush: Dockerfile
 data_abstraction_benchmarks.tar: Dockerfile
 	docker save data_abstraction_benchmarks > $@
 
-.PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat save_results
+.PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat save_results errors
 # .SECONDARY:$(RESULT_FOLDER)/res.csv 
 
 #######################CLEANING###########################################
