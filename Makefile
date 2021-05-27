@@ -111,7 +111,7 @@ clean:
 
 #######################OtherStuff####################################
 
-ifeq($(findstring $(MAKECMDGOALS),$(EASY_TARGETS)),)
+ifeq ($(findstring $(MAKECMDGOALS),$(EASY_TARGETS)),)
 ifeq ($(MAKECMDGOALS),)
 ifndef IGNORE
 PRINT=yes
