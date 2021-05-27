@@ -433,15 +433,12 @@ smt2:$(SMT2EXAMPLES)
 abstracted:$(ABSEXAMPLES)
 results:$(RESULTS)
 
-
-$(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt:
-	@mkdir -p $$(dirname "$@")
-	@touch "$@"
-	-@$(file > $@) 
-	-@$(foreach V,$(RESULTS),$(file >> $@,$V))
+LISTFILE=$(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt
+$(file > $(LISTFILE)) 
+$(foreach V,$(RESULTS),$(file >> $(LISTFILE),$V))
 
 #We gather the results in a csv file...
-$(BUILD_FOLDER)/res__$(UNIQAPPEND).csv: $(RESULTS) $(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt
+$(BUILD_FOLDER)/res__$(UNIQAPPEND).csv: $(RESULTS)
 	@echo "Gathering Results..."
 	@add_res()\
 	{\
@@ -457,7 +454,7 @@ $(BUILD_FOLDER)/res__$(UNIQAPPEND).csv: $(RESULTS) $(BUILD_FOLDER)/targets__$(UN
 	    solvetime=$$(cat $$file | grep ";timesolving=" | sed -E 's,;timesolving=,,' | tr '\n' ' ') ; \
 	    echo "$${pfile} $(SEP) $${preprocess} $(SEP) $${preprocesstime} $(SEP) $${abs} $(SEP) $${abstime} $(SEP) $${solver} $(SEP) $${result} $(SEP) $${solvetime}" ;\
 	};\
-	cat "$(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt" | tr ' ' '\n' | grep "\S" | \
+	cat "$(LISTFILE)" | tr ' ' '\n' | grep "\S" | \
 	while read p; do \
 	  add_res $$p;\
 	done \
