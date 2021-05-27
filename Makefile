@@ -90,6 +90,9 @@ endif
 
 #######################OtherStuff####################################
 
+
+
+
 ifeq ($(MAKECMDGOALS),)
 ifndef IGNORE
 PRINT=yes
@@ -403,6 +406,13 @@ $(foreach solver,$(SOLVERS),$(eval $(call mk_solver_rule,$(solver))))
 
 #######################PRINTING INFORMATION###########################################
 
+define buildprinter
+ALLBUILDINFO+=$$($(1)_TOOL) $$($(1)_TL) $$($(1)_EXP) $$($(1)_EXT)
+endef
+$(foreach pre,$(PREPROCESSORS) $(ABSTOOLS) $(SOLVERS),$(eval $(call buildprinter,$(pre))))  
+ALLBUILDINFO+=$(BENCHMARKS)
+UNIQAPPEND=$(shell echo "$(ALLBUILDINFO)" | md5sum | tr -d ' ')
+
 NUM_EXP=$(words $(BENCHMARKS))
 NUM_SMT2=$(words $(SMT2EXAMPLES))
 NUM_ABS=$(words $(ABSEXAMPLES))
@@ -423,12 +433,16 @@ smt2:$(SMT2EXAMPLES)
 abstracted:$(ABSEXAMPLES)
 results:$(RESULTS)
 
+
+$(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt:
+	@mkdir -p $$(dirname "$@")
+	@touch "$@"
+	@$(file >$@) 
+	@$(foreach V,$(RESULTS),$(file >>$@,$V))
+
 #We gather the results in a csv file...
-$(RESULT_FOLDER)/res.csv: $(RESULTS)
+$(BUILD_FOLDER)/res__$(UNIQAPPEND).csv: $(RESULTS) $(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt
 	@echo "Gathering Results..."
-	@mkdir -p $$(dirname $@)
-	@touch $(BUILD_FOLDER)/lists_of_targets.txt
-	@$(file >$(BUILD_FOLDER)/lists_of_targets.txt) $(foreach V,$(RESULTS),$(file >>$(BUILD_FOLDER)/lists_of_targets.txt,$V))
 	@add_res()\
 	{\
 	    file=$$1;\
@@ -443,17 +457,19 @@ $(RESULT_FOLDER)/res.csv: $(RESULTS)
 	    solvetime=$$(cat $$file | grep ";timesolving=" | sed -E 's,;timesolving=,,' | tr '\n' ' ') ; \
 	    echo "$${pfile} $(SEP) $${preprocess} $(SEP) $${preprocesstime} $(SEP) $${abs} $(SEP) $${abstime} $(SEP) $${solver} $(SEP) $${result} $(SEP) $${solvetime}" ;\
 	};\
-	cat $(BUILD_FOLDER)/lists_of_targets.txt | tr ' ' '\n' | grep "\S" | \
+	cat "$(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt" | tr ' ' '\n' | grep "\S" | \
 	while read p; do \
 	  add_res $$p;\
 	done \
-  	| sort | (echo 'file $(SEP) preprocess $(SEP) preprocesstime $(SEP) abs $(SEP) abstime $(SEP) solver $(SEP) result $(SEP) solvetime' && cat) | tr '$(SEP)' ';' | tr -d ' ' > $@
+  	| sort | (echo 'file$(SEP)preprocess$(SEP)preprocesstime$(SEP)abs$(SEP)abstime$(SEP)solver$(SEP)result$(SEP)solvetime' && cat) | tr '$(SEP)' ';' | tr -d ' ' > $@
 	@cat $@ | column -t -s ';'
 	@echo ' '
 	@echo ' '
-	@rm $(BUILD_FOLDER)/lists_of_targets.txt
+
+$(RESULT_FOLDER)/res.csv: $(BUILD_FOLDER)/res__$(UNIQAPPEND).csv
+	@cp "$(BUILD_FOLDER)/res__$(UNIQAPPEND).csv" $@
 	
-$(RESULT_FOLDER)/analysis.csv: results $(RESULT_FOLDER)/res.csv src/analysis.sql
+$(RESULT_FOLDER)/analysis.csv:$(RESULT_FOLDER)/res.csv src/analysis.sql
 	@cat src/analysis.sql | sed -E "s;!resfile!;$(RESULT_FOLDER)/res.csv;" |  sqlite3 > $@
 	@cat $@ | column -t -s ';'
 	@echo ' '
