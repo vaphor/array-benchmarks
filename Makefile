@@ -437,8 +437,8 @@ results:$(RESULTS)
 $(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt:
 	@mkdir -p $$(dirname "$@")
 	@touch "$@"
-	-@$(file >$@) 
-	-@$(foreach V,$(RESULTS),$(file >>$@,$V))
+	-@$(file > $@) 
+	-@$(foreach V,$(RESULTS),$(file >> $@,$V))
 
 #We gather the results in a csv file...
 $(BUILD_FOLDER)/res__$(UNIQAPPEND).csv: $(RESULTS) $(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt
