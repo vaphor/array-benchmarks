@@ -411,7 +411,7 @@ ALLBUILDINFO+=$$($(1)_TOOL) $$($(1)_TL) $$($(1)_EXP) $$($(1)_EXT)
 endef
 $(foreach pre,$(PREPROCESSORS) $(ABSTOOLS) $(SOLVERS),$(eval $(call buildprinter,$(pre))))  
 ALLBUILDINFO+=$(BENCHMARKS)
-UNIQAPPEND=$(shell echo "$(ALLBUILDINFO)" | md5sum | tr -d ' ')
+UNIQAPPEND=$(shell echo "$(ALLBUILDINFO)" | md5sum | tr -d ' ' | tr -d '-')
 
 NUM_EXP=$(words $(BENCHMARKS))
 NUM_SMT2=$(words $(SMT2EXAMPLES))
@@ -437,8 +437,8 @@ results:$(RESULTS)
 $(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt:
 	@mkdir -p $$(dirname "$@")
 	@touch "$@"
-	@$(file >$@) 
-	@$(foreach V,$(RESULTS),$(file >>$@,$V))
+	-@$(file >$@) 
+	-@$(foreach V,$(RESULTS),$(file >>$@,$V))
 
 #We gather the results in a csv file...
 $(BUILD_FOLDER)/res__$(UNIQAPPEND).csv: $(RESULTS) $(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt
