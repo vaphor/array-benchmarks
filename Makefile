@@ -44,7 +44,7 @@ ifeq ($(BUILDTYPE),)
   ABSTOOLS?=$(shell echo $(ALLABSTOOLS) | tr ' ' '\n' | grep DATAABS | tr '\n' ' ')
   ABSTOOL_TL?=1000s
   Z3_SOLVER_TL?=5s
-  SOLVERS?=$(wordlist 1,1,$(ALLZ3SOLVERS))
+  SOLVERS?=$(wordlist 1,3,$(ALLZ3SOLVERS))
 endif
 
 ifeq ($(BUILDTYPE),quick)
@@ -107,6 +107,7 @@ endif
 ifdef PRINT
 red:=$(shell tput bold; tput setaf 1)
 green:=$(shell tput bold; tput setaf 2)
+yellow:=$(shell tput bold; tput setaf 3)
 reset:=$(shell tput sgr0)
 $(info To display progress, we suggest you invoke make using $(red)make -j4 PARAMS | nl -b p"Creating.*res$(reset))
 NUMBERTOBUILD=$(shell make $(MAKECMDGOALS) --dry-run  BUILDTYPE=$(BUILDTYPE) EXAMPLES_FOLDER=$(EXAMPLES_FOLDER) IGNORE=true  | grep "Creating" | grep "res" |  wc -l)
@@ -388,7 +389,7 @@ ifdef COMPUTE
 ifeq "$$($(1)_TOOLPATHOK)" "ok"
 USEDSOLVERS+=$(1)
 USEDTOOLS+=$$(word 1,$$($(1)_TOOL))
-SOLVERDESC+="NAME=$(1)!COMMANDLINE=$$(subst $$(space),?,$$($(1)_TOOL))!TIMELIMIT=$$($(1)_TL)"
+SOLVERDESC+="NAME=$(1)!COMMANDLINE=$$(subst $$(space),?,$$($(1)_TOOL))!TIMELIMIT=$$($(1)_TL)!EXT=$$($(1)_EXT)"
 RESULTS+=$$(subst .smt2,$(SEP)$$($(1)_EXT).res,$$(subst /ABSSMT2/,/Results/,$$(ABSEXAMPLES))) 
 else
 $$(info solver tool for $(1) has $(red)not been found$(reset). Continuing without generating the corresponding targets.)
@@ -475,7 +476,18 @@ $(RESULT_FOLDER)/time.pdf: $(RESULT_FOLDER)/time.dat
 errors:$(RESULT_FOLDER)/res.csv
 	@rm -rf $(RESULT_FOLDER)/error_files
 	@mkdir -p $(RESULT_FOLDER)/error_files
-	@cat $(RESULT_FOLDER)/res.csv | grep error | sed -E 's:(.*);(.*);.*;(.*);.*;(.*);.*;.*:\1$(SEP)\2$(SEP)\3.smt2:' | xargs -I '@' sh -c 'echo $(red)error$(reset) z3 on file $(BUILD_FOLDER)/ABSSMT2/@ failed; cp $(BUILD_FOLDER)/ABSSMT2/@ $(RESULT_FOLDER)/error_files/@'
+	@compute_error()\
+	{\
+	  postfixfile=$$(echo $$1 | sed -E 's:(.*);(.*);.*;(.*);.*;(.*);.*;.*:\1$(SEP)\2$(SEP)\3.smt2:');\
+	  ext_solver=$$(echo $$1 | sed -E 's:(.*);(.*);.*;(.*);.*;(.*);.*;.*:\4:');\
+	  solver_command=$$(echo $(SOLVERDESC) | tr ' ' '\n' | grep EXT=$$ext_solver| sed -E 's;.*!COMMANDLINE=([^!]*)!.*;\1;' | tr '?' ' '); \
+	  echo "$(red)error$(reset) command $(yellow)$$solver_command $(BUILD_FOLDER)/ABSSMT2/$$postfixfile$(reset) failed"; \
+	  (echo ';'Solver command used for error is $$solver_command ; cat $(BUILD_FOLDER)/ABSSMT2/$$postfixfile) > $(RESULT_FOLDER)/error_files/$$postfixfile; \
+	};\
+	cat $(RESULT_FOLDER)/res.csv | grep error |\
+	while read p; do \
+	  compute_error $$p;\
+	done \
 
 
 all:$(RESULT_FOLDER)/time.dat $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/res.csv errors
@@ -507,7 +519,7 @@ dockerpush: Dockerfile
 	docker login --username=jbraine && docker push jbraine/data_abstraction_benchmarks:latest
 	
 data_abstraction_benchmarks.tar: Dockerfile
-	docker save data_abstraction_benchmarks > $@
+	docker save data_abstraction_benchmarks:latest > $@
 
 .PHONY: all smt2 abstracted results readme dockerimg dockerpush $(RESULT_FOLDER)/analysis.csv $(RESULT_FOLDER)/time.pdf $(RESULT_FOLDER)/time.dat save_results errors
 # .SECONDARY:$(RESULT_FOLDER)/res.csv 
