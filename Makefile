@@ -424,13 +424,16 @@ $(foreach solver,$(SOLVERS),$(eval $(call mk_solver_rule,$(solver))))
 .SECONDARY: $(RESULTS)
 
 #######################PRINTING INFORMATION###########################################
-
-define buildprinter
-ALLBUILDINFO+=$$($(1)_TOOL) $$($(1)_TL) $$($(1)_EXP) $$($(1)_EXT)
-endef
-$(foreach pre,$(PREPROCESSORS) $(ABSTOOLS) $(SOLVERS),$(eval $(call buildprinter,$(pre))))  
-ALLBUILDINFO+=$(BENCHMARKS)
-UNIQAPPEND=$(shell echo "$(ALLBUILDINFO)" | md5sum | tr -d ' ' | tr -d '-')
+LISTFILE=$(BUILD_FOLDER)/alltargets.txt
+$(shell mkdir -p $(dir $(LISTFILE)))
+$(file > $(LISTFILE)) 
+$(foreach V,$(RESULTS),$(file >> $(LISTFILE),$V))
+# define buildprinter
+# ALLBUILDINFO+=$$($(1)_TOOL) $$($(1)_TL) $$($(1)_EXP) $$($(1)_EXT)
+# endef
+# $(foreach pre,$(PREPROCESSORS) $(ABSTOOLS) $(SOLVERS),$(eval $(call buildprinter,$(pre))))  
+# ALLBUILDINFO+=$(BENCHMARKS)
+UNIQAPPEND=$(shell cat $(BUILD_FOLDER)/alltargets.txt | md5sum | tr -d ' ' | tr -d '-')
 
 NUM_EXP=$(words $(BENCHMARKS))
 NUM_SMT2=$(words $(SMT2EXAMPLES))
@@ -452,10 +455,6 @@ smt2:$(SMT2EXAMPLES)
 abstracted:$(ABSEXAMPLES)
 results:$(RESULTS)
 
-LISTFILE=$(BUILD_FOLDER)/targets__$(UNIQAPPEND).txt
-$(shell mkdir -p $(dir $(LISTFILE)))
-$(file > $(LISTFILE)) 
-$(foreach V,$(RESULTS),$(file >> $(LISTFILE),$V))
 
 #We gather the results in a csv file...
 $(BUILD_FOLDER)/res__$(UNIQAPPEND).csv: $(RESULTS)
@@ -484,6 +483,7 @@ $(BUILD_FOLDER)/res__$(UNIQAPPEND).csv: $(RESULTS)
 	@echo ' '
 
 $(RESULT_FOLDER)/res.csv: $(BUILD_FOLDER)/res__$(UNIQAPPEND).csv
+	@mkdir -p $(dir $@)
 	@cp "$(BUILD_FOLDER)/res__$(UNIQAPPEND).csv" $@
 	
 $(RESULT_FOLDER)/analysis.csv:$(RESULT_FOLDER)/res.csv src/analysis.sql
